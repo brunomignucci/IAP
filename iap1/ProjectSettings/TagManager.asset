@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - indice
+  - gord
+  - medio
+  - anillo
+  - "me\xF1ique"
+  - palma
+  - INDICE_IZQ
+  - GORDO_DER
+  - GORDO_IZQ
+  - INDICE_DER
+  - CUBO
+  - ESFERA
+  - PLANO
   layers:
   - Default
   - TransparentFX
