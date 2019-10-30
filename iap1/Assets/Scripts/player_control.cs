@@ -14,7 +14,7 @@ public class player_control : MonoBehaviour
     }
 
     //Update is called once per frame
-    void FixedUpdate()
+    void Update ()
     {
         Vector3 nueva_pos= new Vector3(0,0,0);
 		float delta = 0.0f;
@@ -53,7 +53,7 @@ public class player_control : MonoBehaviour
 
         if (cambie)
 			//transform.GetComponent<PlayerController>().RpcMoverPlayer(nueva_pos);
-			transform.GetComponent<PlayerController>().RpcMoverPlayer(delta);
+			transform.GetComponent<Client>().RpcMoverPlayer(delta);
 			cambie = false;
     }
 }

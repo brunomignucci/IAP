@@ -4,9 +4,9 @@ using UnityEngine;
 using System;
 public class activar_menu : MonoBehaviour
 {
-    public GameObject cubo,esfera,flag_menu;
+    public GameObject cubo, esfera, flag_menu;
 
-    Vector3 rot_inicial,rot;
+    Vector3 rot_inicial, rot;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +26,11 @@ public class activar_menu : MonoBehaviour
         float cor_x = rot.x;
         float cor_y = rot.y;
         float cor_z = rot.z;
-        //Debug.Log(cor_y);
+        //Debug.Log("x"+cor_x);
+        //Debug.Log("y"+cor_y);
+        //Debug.Log("z"+cor_z);
         if (//cor_x - rot_inicial.x > 120)// &&
-            Math.Abs(cor_y) > 60  &&  cor_y<200)
+             cor_x < 50)
         {
             cubo.SetActive(true);
             esfera.SetActive(true);

@@ -136,12 +136,15 @@ public class crear_objetos : NetworkBehaviour
 				{
 					if (!menu_flag.activeSelf)
 					{
-						cubos[referencia_cubos].AddComponent<Rigidbody>();
-					}
+						//cubos[referencia_cubos].AddComponent<Rigidbody>();
+                        cubos[referencia_cubos].GetComponent<Rigidbody>().isKinematic = false;
+                        cubos[referencia_cubos].GetComponent<gravityPrefab>().enabled = true;
+                }
 					else
 					{
-						esferas[referencia_esferas].AddComponent<Rigidbody>();
-					}
+                        esferas[referencia_esferas].GetComponent<Rigidbody>().isKinematic = false;
+                        esferas[referencia_esferas].GetComponent<gravityPrefab>().enabled = true;
+                }
 					Debug.Log("toque el gordo der");
 					escala = false;
 					no_cree = true;
