@@ -25,9 +25,11 @@ public class PlayerSettings : NetworkBehaviour
 			//desactivar scripts del server
 			GetComponent<leap_player_controller>().enabled = false;
 			GetComponent<player_control>().enabled = false;
+			GameObject.Find("Leap Rig").SetActive(false);
+
 			ClientCamera.SetActive(true);
 			ServerCamera.SetActive(false);
-
+			
 		}
 
 		if (!isLeapUser)
