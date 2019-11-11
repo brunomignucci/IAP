@@ -17,19 +17,19 @@ public class player_control : MonoBehaviour
     void Update ()
     {
         Vector3 nueva_pos= new Vector3(0,0,0);
-		float delta = 0.0f;
+		int delta = 0;
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey("w"))
         {
 			//transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed * 2.5f;
 			//nueva_pos = transform.position + transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed * 2.5f;
-			delta = Time.deltaTime * movementSpeed * 2.5f;
+			delta = 1;
             cambie = true;
         }
         else if (Input.GetKey("w") && !Input.GetKey(KeyCode.LeftShift))
         {
 			//transform.position += transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
 			//nueva_pos = transform.position + transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
-			delta = Time.deltaTime * movementSpeed;
+			delta = 1;
 
 			cambie = true;
         }
@@ -37,7 +37,7 @@ public class player_control : MonoBehaviour
         {
 			//transform.position -= transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
 			//nueva_pos = transform.position - transform.TransformDirection(Vector3.forward) * Time.deltaTime * movementSpeed;
-			delta = - Time.deltaTime * movementSpeed;
+			delta = -1;
 			cambie = true;
         }
 

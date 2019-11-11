@@ -5,14 +5,15 @@ using UnityEngine.Networking;
 
 public class PlayerSettings : NetworkBehaviour
 {
-	GameObject ClientCamera, ServerCamera;
-	bool isLeapUser;
+	[SerializeField]
+	float MovementSpeed;
+	private bool isLeapUser;
 	// Start is called before the first frame update
 	void Start()
 	{
 		isLeapUser = true;
-		ClientCamera = GameObject.Find("ClientCamera");
-		ServerCamera = GameObject.Find("ServerCamera");
+		GameObject ClientCamera = GameObject.Find("ClientCamera");
+		GameObject ServerCamera = GameObject.Find("ServerCamera");
 
 		if (!isLocalPlayer)
 		{
@@ -42,5 +43,9 @@ public class PlayerSettings : NetworkBehaviour
 	void Update()
 	{
 
+	}
+	public float GetMovementSpeed()
+	{
+		return MovementSpeed;
 	}
 }

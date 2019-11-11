@@ -1451,7 +1451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubo: {fileID: 7821941046001394148}
   esfera: {fileID: 7627561631034983848}
-  flag_menu: {fileID: 9121141168114316645}
   a: {fileID: 0}
   b: {fileID: 0}
   c: {fileID: 0}
@@ -1887,6 +1886,7 @@ GameObject:
   - component: {fileID: 2826121164521960364}
   - component: {fileID: 3719444803416595319}
   - component: {fileID: 8356152112315790507}
+  - component: {fileID: 828880471583505503}
   m_Layer: 0
   m_Name: LoPoly Rigged Hand Right
   m_TagString: Untagged
@@ -2074,6 +2074,19 @@ MonoBehaviour:
   - {fileID: 5603345204491924326}
   - {fileID: 23471823124598759}
   - {fileID: 8160191096501374881}
+--- !u!114 &828880471583505503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2709222353926372960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36982c436696251419e444ee2869505b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palm_r: {fileID: 8222981272145720479}
 --- !u!1 &2719193298269396465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2818,7 +2831,6 @@ GameObject:
   - component: {fileID: 7543838834105781362}
   - component: {fileID: 2024923797545265434}
   - component: {fileID: 2985257949413378823}
-  - component: {fileID: 6014902045617440287}
   - component: {fileID: 6079766826007290907}
   - component: {fileID: 8202083089279879095}
   - component: {fileID: 5586718955947265939}
@@ -2956,19 +2968,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 40
---- !u!114 &6014902045617440287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768440248311932564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36982c436696251419e444ee2869505b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  palm_r: {fileID: 8222981272145720479}
 --- !u!114 &6079766826007290907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2981,6 +2980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d323583c2229d694bb88fb7e843bd423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementSpeed: 4
 --- !u!114 &8202083089279879095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2995,6 +2995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeapHandRight: {fileID: 2709222353926372960}
   LeapHandLeft: {fileID: 7276272611254868782}
+  LeapRig: {fileID: 7665765494854671150}
 --- !u!114 &5586718955947265939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,6 +3010,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ClientHandRight: {fileID: 8362194909993100510}
   ClientHandLeft: {fileID: 3961694829937169294}
+  ClientCamera: {fileID: 7542236856677915805}
+  Head: {fileID: 4318810456759181966}
 --- !u!114 &7596180968863038581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3613,7 +3616,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubo: {fileID: 5917911023668799910}
   esfera: {fileID: 3638358774766582718}
-  flag_menu: {fileID: 9121141168114316645}
   a: {fileID: 4534044562575660726}
   b: {fileID: 2393668486578711517}
   c: {fileID: 5170119601642711260}
