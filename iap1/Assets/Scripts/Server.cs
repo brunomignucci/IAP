@@ -26,24 +26,24 @@ public class Server : NetworkBehaviour
 			return;
 		}
 
-		if (Input.GetKey("z"))
-		{
-			GetComponent<Client>().RpcRotarPlayer(new Vector3(0, 0, 1));
-		}
-		if (Input.GetKey("v"))
-		{
+		//if (Input.GetKey("z"))
+		//{
+		//	GetComponent<Client>().RpcRotarPlayer(new Vector3(0, 0, 1));
+		//}
+		//if (Input.GetKey("v"))
+		//{
 
-			GetComponent<Client>().RpcRotarPlayer(new Vector3(1, 0, 0));
-		}
-		if (Input.GetKey("y"))
-		{
+		//	GetComponent<Client>().RpcRotarPlayer(new Vector3(1, 0, 0));
+		//}
+		//if (Input.GetKey("y"))
+		//{
 
-			GetComponent<Client>().RpcRotarPlayer(new Vector3(0, 1, 0));
-		}
-		if (Input.GetKey("c"))
-		{
-			GetComponent<Client>().RpcCentrarCamara();
-		}
+		//	GetComponent<Client>().RpcRotarPlayer(new Vector3(0, 1, 0));
+		//}
+		//if (Input.GetKey("c"))
+		//{
+		//	GetComponent<Client>().RpcCentrarCamara();
+		//}
 
 
 		if(LeapHandRight.GetComponent<leap_player_controller>().GetMovimiento() != 0)

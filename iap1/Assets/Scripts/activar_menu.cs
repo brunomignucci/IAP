@@ -17,9 +17,7 @@ public class activar_menu : MonoBehaviour
     {
         cubo.SetActive(false);
         esfera.SetActive(false);
-
 		plano.Set3Points(a.transform.position, b.transform.position, c.transform.position);
-
     }
 
     // Update is called once per frame

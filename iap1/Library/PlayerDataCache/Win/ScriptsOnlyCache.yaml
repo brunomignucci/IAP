@@ -1325,8 +1325,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 38be3300d17a12a730e0dbeba6d54c6f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: movementClient
   platform: 5
   scenePathNames:
   - Assets/Scenes/OfflineScene.unity
   - Assets/Scenes/OnlineScene.unity
-  playerPath: D:/Documents/GitHub/IAP/iap1/built/iap1.exe
+  playerPath: C:/Users/ptcni/Documents/GitHub/IAP/iap1/built/iap1.exe

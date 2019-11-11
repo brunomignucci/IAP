@@ -20,6 +20,7 @@ ScriptsOnlyBuild:
     - gravityPrefab
     - leap_player_controller
     - menu
+    - movementClient
     - pick_far
     - player_control
     - turnOffGravity
@@ -119,6 +120,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13734}
     - Class: 114
       Script: {instanceID: 13810}
+    - Class: 114
+      Script: {instanceID: 14090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1325,8 +1328,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 38be3300d17a12a730e0dbeba6d54c6f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: movementClient
   platform: 13
   scenePathNames:
   - Assets/Scenes/OfflineScene.unity
   - Assets/Scenes/OnlineScene.unity
-  playerPath: D:/Documents/GitHub/IAP/iap1/built/sarlangaV10.apk
+  playerPath: C:/Users/ptcni/Documents/GitHub/IAP/iap1/built/sasrlangaV2.apk

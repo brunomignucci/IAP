@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
+/*
+    Es la clase donde estan todos los RPC del cliente.
+     
+     
+     */
+
 public class Client : NetworkBehaviour
 {
 	[SerializeField]
@@ -37,23 +43,24 @@ public class Client : NetworkBehaviour
 	[ClientRpc]
 	public void RpcMoverPlayer(int movDir)
 	{
-		Vector3 proj = new Vector3(1, 0, 1);
-		float delta = movDir * Time.deltaTime;
-		transform.Translate(Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward)) * delta * GetComponent<PlayerSettings>().GetMovementSpeed(), Space.World);
+        GetComponent<movementClient>().moverPlayer(movDir);
 	}
 
+    /*
+     * Metodos implementados para debugging
 	[ClientRpc]
 	public void RpcRotarPlayer(Vector3 delta)
 	{
 		transform.Rotate(delta);
 	}
+
 	[ClientRpc]
 	public void RpcCentrarCamara()
 	{
 		UnityEngine.XR.InputTracking.disablePositionalTracking = true;
 		UnityEngine.XR.InputTracking.Recenter();
 		UnityEngine.XR.InputTracking.disablePositionalTracking = false;
-	}
+	}*/
 
 	[ClientRpc]
 	public void RpcUpdateHand(Vector3[] newPositions, Quaternion[] newRotations, int handedness)
@@ -70,6 +77,7 @@ public class Client : NetworkBehaviour
 		}
 
 	}
+
 	[ClientRpc]
 	public void RpcDisableHand(int handedness)
 	{
@@ -82,5 +90,4 @@ public class Client : NetworkBehaviour
 			ClientHandLeft.SetActive(false);
 		}
 	}
-
 }

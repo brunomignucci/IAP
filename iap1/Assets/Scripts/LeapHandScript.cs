@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LeapHandScript : MonoBehaviour
 {
+
 	[SerializeField]
 	private GameObject wrist, palm;
 	[SerializeField]
@@ -20,6 +21,11 @@ public class LeapHandScript : MonoBehaviour
     {
         
     }
+
+    /*
+    devuevlve un arreglo de posiciones de cada gameobject que compone la mano 
+         
+    */
 	public Vector3[] getHandPositionsLocal()
 	{
 		Vector3[] toReturn = new Vector3[23];
@@ -44,6 +50,10 @@ public class LeapHandScript : MonoBehaviour
 
 		return toReturn;
 	}
+
+    /*
+     devuelve un arreglo con las rotaciones de cada gameobject que compone las manos
+     */
 	public Quaternion[] getHandRotationsLocal()
 	{
 		Quaternion[] toReturn = new Quaternion[23];
