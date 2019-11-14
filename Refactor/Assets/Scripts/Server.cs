@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -7,11 +8,18 @@ public class Server : NetworkBehaviour
 {
 	[SerializeField]
 	private GameObject LeapHandRight, LeapHandLeft, LeapRig;
+	private Component Cliente;
 
 	public void mover_adelante_leap()
 	{
 		GetComponent<Client>().RpcMoverPlayer(1);
 	}
+
+	internal void SetSelectedHandMenuEntry(int i)
+	{
+		GetComponent<Client>().RpcSetSelectedHandMenuEntry(i);
+	}
+
 	public void mover_atras_leap()
 	{
 		GetComponent<Client>().RpcMoverPlayer(-1);
@@ -24,7 +32,7 @@ public class Server : NetworkBehaviour
 			return;
 		}
 		InvokeRepeating("updateHands", 1, 0.01f);
-
+		Cliente = GetComponent<Client>();
 	}
 
 	// Update is called once per frame
@@ -96,6 +104,11 @@ public class Server : NetworkBehaviour
 	{
 		//transform.rotation = newRot;
 		LeapRig.transform.rotation = newRot;
+	}
+
+	public void SetHandMenuActive(bool active)
+	{
+		GetComponent<Client>().RpcSetHandMenuActive(active);
 	}
 
 }

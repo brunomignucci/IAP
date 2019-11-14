@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -12,7 +13,7 @@ using UnityEngine.Networking;
 public class Client : NetworkBehaviour
 {
 	[SerializeField]
-	private GameObject ClientHandRight, ClientHandLeft, ClientCamera, Head;
+	private GameObject ClientHandRight, ClientHandLeft, ClientCamera, Head, HandMenu;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -22,8 +23,13 @@ public class Client : NetworkBehaviour
 		}
 	}
 
-    // Update is called once per frame
-    void Update()
+	internal void RpcSetSelectedHandMenuEntry(int i)
+	{
+		HandMenu.GetComponent<HandMenu>().SelectEntry(HandMenu.GetComponent<HandMenu>().GetEntryAt(i));
+	}
+
+	// Update is called once per frame
+	void Update()
     {
 		if(!isLocalPlayer)
 		{
@@ -89,5 +95,12 @@ public class Client : NetworkBehaviour
 		{
 			ClientHandLeft.SetActive(false);
 		}
+	}
+
+	[ClientRpc]
+	public void RpcSetHandMenuActive(bool active)
+	{
+		HandMenu.SetActive(active);
+		//Debug.Log("Client -- RpcSetHandMenuActive()");
 	}
 }

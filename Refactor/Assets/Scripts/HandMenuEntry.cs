@@ -16,7 +16,7 @@ public class HandMenuEntry : AMenu_Entry
 	public override void deselect()
 	{
 		selected = false;
-		GetComponent<Renderer>().material.color = Color.white;
+		GetComponent<Renderer>().material.color = Color.gray;
 	}
 
 	public override bool detect()

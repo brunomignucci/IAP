@@ -14,6 +14,7 @@ public class PlayerSettings : NetworkBehaviour
 		isLeapUser = true;
 		GameObject ClientCamera = GameObject.Find("ClientCamera");
 		GameObject ServerCamera = GameObject.Find("ServerCamera");
+		GameObject Gestos = GameObject.Find("Gestos");
 
 		if (!isLocalPlayer)
 		{
@@ -26,10 +27,12 @@ public class PlayerSettings : NetworkBehaviour
 			//desactivar scripts del server
 			GetComponent<leap_player_controller>().enabled = false;
 			GetComponent<player_control>().enabled = false;
+			
 			GameObject.Find("Leap Rig").SetActive(false);
 
 			ClientCamera.SetActive(true);
 			ServerCamera.SetActive(false);
+			Gestos.SetActive(false);
 			
 		}
 
