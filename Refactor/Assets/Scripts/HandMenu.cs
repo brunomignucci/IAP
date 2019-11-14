@@ -23,8 +23,8 @@ public class HandMenu : AMenu
     // Update is called once per frame
     void Update()
     {
-        
-    }
+		entries = GetComponentsInChildren<HandMenuEntry>();
+	}
 	public AMenu_Entry GetEntryAt(int i)
 	{
 		return entries[i];

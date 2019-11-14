@@ -23,6 +23,7 @@ public class ScaleState : State
     if(escalando){
       objeto.transform.position = referencia_posicion.transform.position
        + new Vector3(0, 0.5f, 0.3f);
+			objeto.transform.localScale = new Vector3(escala,escala,escala) ;
       objeto.GetComponent<SpawnableObject>().ScaleObject(escala);
       Debug.Log(escala);
       if(!tipoEscalado){
