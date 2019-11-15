@@ -8,7 +8,7 @@ public class gesto_press_and_hold : ADetector_gesto
 {
     [SerializeField]
     GameObject go1, go2;
-    private static float distancia_optima = 0.01f;
+    private static float distancia_optima = 0.02f;
     private bool state = false;//estado interno
 
     public override bool detect()

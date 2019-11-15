@@ -25,7 +25,8 @@ public class Client : NetworkBehaviour
 
 	internal void RpcSetSelectedHandMenuEntry(int i)
 	{
-		HandMenu.GetComponent<HandMenu>().SelectEntry(HandMenu.GetComponent<HandMenu>().GetEntryAt(i));
+		//HandMenu.GetComponent<HandMenu>().SelectEntry(HandMenu.GetComponent<HandMenu>().GetEntryAt(i));
+		HandMenu.GetComponent<HandMenu>().SelectEntry(i);
 	}
 
 	// Update is called once per frame

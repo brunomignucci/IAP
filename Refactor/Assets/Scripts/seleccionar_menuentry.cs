@@ -20,7 +20,8 @@ public class seleccionar_menuentry : AAccionador
 	{
 		menu.SelectEntry(menuentry);
 		transform.root.GetComponent<Server>().SetSelectedHandMenuEntry(menuentry.transform.GetSiblingIndex());
-		if(toCreate.transform.childCount > 0)
+
+		if (toCreate.transform.childCount > 0)
 		{
 			Destroy(toCreate.transform.GetChild(0).gameObject);
 		}
