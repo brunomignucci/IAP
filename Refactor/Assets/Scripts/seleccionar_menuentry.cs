@@ -10,8 +10,6 @@ public class seleccionar_menuentry : AAccionador
 	[SerializeField]
 	private AMenu menu;
 	[SerializeField]
-	private GameObject menu_flag;
-	[SerializeField]
 	private GameObject prefab;
 	[SerializeField]
 	private GameObject toCreate;
@@ -26,6 +24,5 @@ public class seleccionar_menuentry : AAccionador
 			Destroy(toCreate.transform.GetChild(0).gameObject);
 		}
 		Instantiate(prefab, toCreate.transform);
-		//menu_flag.SetActive(false);
 	}
 }

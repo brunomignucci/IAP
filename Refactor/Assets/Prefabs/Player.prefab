@@ -3220,6 +3220,8 @@ MonoBehaviour:
     type: 3}
   esferaToCreate: {fileID: 1105066688224035044, guid: 9b951a93e368d9b4c8b2e15caa56d8c7,
     type: 3}
+  leaphandleft: {fileID: 7276272611254868782}
+  leaphandright: {fileID: 2709222353926372960}
 --- !u!114 &8202083089279879095
 MonoBehaviour:
   m_ObjectHideFlags: 0
