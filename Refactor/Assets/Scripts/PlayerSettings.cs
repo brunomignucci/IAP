@@ -10,7 +10,7 @@ public class PlayerSettings : NetworkBehaviour
 	[SerializeField]
 	GameObject ClientCamera, ServerCamera, Gestos, LeapRig;
 	[SerializeField]
-	GameObject MenuEntryCubo, MenuEntryEsfera, menu, toCreate, cuboToCreate, esferaToCreate,leaphandleft,leaphandright;
+	GameObject MenuEntryCubo, MenuEntryEsfera;
 	private bool isLeapUser;
 	// Start is called before the first frame update
 	void Start()
