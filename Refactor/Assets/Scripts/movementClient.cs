@@ -38,7 +38,7 @@ public class movementClient : NetworkBehaviour
         }
     }
 
-    public void moverPlayer(int direction) {
+    public void moverPlayer(float delta) {
         //float mH = Input.GetAxis("Horizontal");
         //float mV = Input.GetAxis("Vertical");
 
@@ -53,8 +53,9 @@ public class movementClient : NetworkBehaviour
         //}
         //rb.AddForce(new Vector3(0f,0f,1f)*speed,ForceMode.Impulse);
 
-        float delta = direction * Time.deltaTime * GetComponent<PlayerSettings>().GetMovementSpeed();
-        transform.Translate(Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward)) * delta , Space.World);
+        //float delta = direction * Time.deltaTime * GetComponent<PlayerSettings>().GetMovementSpeed();
+		delta = delta * GetComponent<PlayerSettings>().GetMovementSpeed();
+		transform.Translate(Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward)) * delta , Space.World);
 
     }
 
