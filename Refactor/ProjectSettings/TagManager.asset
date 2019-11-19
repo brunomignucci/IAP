@@ -18,6 +18,10 @@ TagManager:
   - ESFERA
   - PLANO
   - LeapCamera
+  - ROCA
+  - CAMARA
+  - CAJA
+  - PLAYER
   layers:
   - Default
   - TransparentFX
@@ -27,7 +31,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Agarrable
   - 
   - 
   - 

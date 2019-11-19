@@ -87,4 +87,14 @@ public class Client : NetworkBehaviour
 	{
 		HandMenu.GetComponent<HandMenu>().SelectEntry(i);
 	}
+    [ClientRpc]
+    public void RpcEnableWater()
+    {
+        ClientCamera.GetComponent<ScriptAgua>().ActivarAgua();
+    }
+    [ClientRpc]
+    public void RpcDisableWater()
+    {
+        ClientCamera.GetComponent<ScriptAgua>().DesactivarAgua();
+    }
 }
