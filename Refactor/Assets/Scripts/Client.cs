@@ -23,11 +23,6 @@ public class Client : NetworkBehaviour
 		}
 	}
 
-	internal void RpcSetSelectedHandMenuEntry(int i)
-	{
-		HandMenu.GetComponent<HandMenu>().SelectEntry(HandMenu.GetComponent<HandMenu>().GetEntryAt(i));
-	}
-
 	// Update is called once per frame
 	void Update()
     {
@@ -51,22 +46,6 @@ public class Client : NetworkBehaviour
 	{
         GetComponent<movementClient>().moverPlayer(movDir);
 	}
-
-    /*
-     * Metodos implementados para debugging
-	[ClientRpc]
-	public void RpcRotarPlayer(Vector3 delta)
-	{
-		transform.Rotate(delta);
-	}
-
-	[ClientRpc]
-	public void RpcCentrarCamara()
-	{
-		UnityEngine.XR.InputTracking.disablePositionalTracking = true;
-		UnityEngine.XR.InputTracking.Recenter();
-		UnityEngine.XR.InputTracking.disablePositionalTracking = false;
-	}*/
 
 	[ClientRpc]
 	public void RpcUpdateHand(Vector3[] newPositions, Quaternion[] newRotations, int handedness)
@@ -101,6 +80,21 @@ public class Client : NetworkBehaviour
 	public void RpcSetHandMenuActive(bool active)
 	{
 		HandMenu.SetActive(active);
-		//Debug.Log("Client -- RpcSetHandMenuActive()");
 	}
+
+	[ClientRpc]
+	public void RpcSetSelectedHandMenuEntry(int i)
+	{
+		HandMenu.GetComponent<HandMenu>().SelectEntry(i);
+	}
+    [ClientRpc]
+    public void RpcEnableWater()
+    {
+        ClientCamera.GetComponent<ScriptAgua>().ActivarAgua();
+    }
+    [ClientRpc]
+    public void RpcDisableWater()
+    {
+        ClientCamera.GetComponent<ScriptAgua>().DesactivarAgua();
+    }
 }

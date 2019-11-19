@@ -13,6 +13,15 @@ public class HandMenu : AMenu
 		selected = entry;
 		selected.select();
 	}
+	public void SelectEntry(int i)
+	{
+		if (selected != null)
+		{
+			selected.deselect();
+		}
+		selected = entries[i];
+		selected.select();
+	}
 
 	// Start is called before the first frame update
 	void Start()

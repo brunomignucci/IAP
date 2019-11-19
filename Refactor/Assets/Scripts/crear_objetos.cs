@@ -11,5 +11,12 @@ public class crear_objetos : AAccionador
     {
         ctx.alert();
     }
+	private void Update()
+	{
+		if (Input.GetKey("p"))
+		{
+			accionar();
+		}
+	}
 
 }

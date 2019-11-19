@@ -110,5 +110,11 @@ public class Server : NetworkBehaviour
 	{
 		GetComponent<Client>().RpcSetHandMenuActive(active);
 	}
+    public void SetWaterEnable(bool active)
+    {
+        if (active) GetComponent<Client>().RpcEnableWater();
+        else GetComponent<Client>().RpcDisableWater();
+
+    }
 
 }

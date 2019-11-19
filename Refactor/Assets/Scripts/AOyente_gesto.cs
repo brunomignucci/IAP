@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public abstract class AAccionador : NetworkBehaviour
+public abstract class AAccionador : MonoBehaviour
 {
     public abstract void accionar();
 }

@@ -5,8 +5,6 @@ using UnityEngine;
 public class HandMenuEntry : AMenu_Entry
 {
 	private bool selected;
-	[SerializeField]
-	GameObject visual;
 
 	public override void select()
 	{

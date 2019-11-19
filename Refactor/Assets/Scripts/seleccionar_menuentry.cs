@@ -10,8 +10,6 @@ public class seleccionar_menuentry : AAccionador
 	[SerializeField]
 	private AMenu menu;
 	[SerializeField]
-	private GameObject menu_flag;
-	[SerializeField]
 	private GameObject prefab;
 	[SerializeField]
 	private GameObject toCreate;
@@ -20,11 +18,11 @@ public class seleccionar_menuentry : AAccionador
 	{
 		menu.SelectEntry(menuentry);
 		transform.root.GetComponent<Server>().SetSelectedHandMenuEntry(menuentry.transform.GetSiblingIndex());
-		if(toCreate.transform.childCount > 0)
+
+		if (toCreate.transform.childCount > 0)
 		{
 			Destroy(toCreate.transform.GetChild(0).gameObject);
 		}
 		Instantiate(prefab, toCreate.transform);
-		//menu_flag.SetActive(false);
 	}
 }

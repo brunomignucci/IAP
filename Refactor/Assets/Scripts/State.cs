@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 
-public abstract class State : NetworkBehaviour
+public abstract class State : MonoBehaviour
 {
   public State next;
   public abstract void alert(CreationStateContext ctx);

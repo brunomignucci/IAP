@@ -9,6 +9,8 @@ public class PlayerSettings : NetworkBehaviour
 	float MovementSpeed;
 	[SerializeField]
 	GameObject ClientCamera, ServerCamera, Gestos, LeapRig;
+	[SerializeField]
+	GameObject MenuEntryCubo, MenuEntryEsfera;
 	private bool isLeapUser;
 	// Start is called before the first frame update
 	void Start()
@@ -27,7 +29,8 @@ public class PlayerSettings : NetworkBehaviour
 			LeapRig.SetActive(false);
 			ClientCamera.SetActive(true);
 			Gestos.SetActive(false);
-			
+			MenuEntryCubo.SetActive(false);
+			MenuEntryEsfera.SetActive(false);			
 		}
 
 		if (!isLeapUser)
@@ -39,7 +42,7 @@ public class PlayerSettings : NetworkBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-
+		
 	}
 	public float GetMovementSpeed()
 	{
