@@ -20,11 +20,13 @@ public class mover_wasd : MonoBehaviour
         pos = transform.position;
 
        
-        if (Input.GetKey("q")) { transform.Rotate(0, -1f, 0f); }
-        if (Input.GetKey("e")) { transform.Rotate(0, 1f, 0f); }
-        if (Input.GetKey("s")) { transform.Rotate(1f, 0f, 0f); }
-        if (Input.GetKey("w")) { transform.Rotate(-1f, 0f, 0f); }
-        transform.forward = this.transform.forward;
+        if (Input.GetKey("q")) { transform.Rotate(0, -50f*Time.deltaTime, 0f); }
+        if (Input.GetKey("e")) { transform.Rotate(0, 50f * Time.deltaTime, 0f); }
+        if (Input.GetKey("s")) { transform.Rotate(50f * Time.deltaTime, 0f, 0f); }
+        if (Input.GetKey("w")) { transform.Rotate(-50f * Time.deltaTime, 0f, 0f); }
+		if (Input.GetKey("u")) { GetComponent<Server>().mover_adelante_leap(); }
+		if (Input.GetKey("j")) { GetComponent<Server>().mover_atras_leap(); }
+		transform.forward = this.transform.forward;
         transform.position = pos;
     }
 }
