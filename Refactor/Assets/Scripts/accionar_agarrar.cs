@@ -4,7 +4,7 @@ using System.Collections;
 public class accionar_agarrar : AAccionador
 {
     float interactDistance = 0.9f;
-    float carryDistance = 0.9f;
+    float carryDistance = 0.6f;
     public LayerMask interactLayer;
 
     private Transform carryObject;
@@ -17,6 +17,11 @@ public class accionar_agarrar : AAccionador
     [SerializeField]
     GameObject dedo1, dedo2, dedo3, dedo4;
 
+    [SerializeField]
+    GameObject referencia_picking;
+
+    Mesh mesh; // = GetComponent<MeshFilter>().mesh
+
     public override void accionar()
     {
         accionar_pick();
@@ -27,7 +32,16 @@ public class accionar_agarrar : AAccionador
             carryObject = hit.transform;
             carryObject.GetComponent<Rigidbody>().useGravity = false;
             haveObject = true;
+            //carryObject.position =  dedo4.transform.position;
+            carryObject.position = camara.transform.position + new Vector3(0f,0f,0.2f);
             Debug.Log("tengo un objeto");
+            if (carryObject.childCount == 1)
+            {
+                mesh = carryObject.GetChild(0).GetComponent<MeshFilter>().mesh;
+            }
+            else {
+                mesh = carryObject.GetComponent<MeshFilter>().mesh;
+            }
         }
     }
 
@@ -70,7 +84,22 @@ public class accionar_agarrar : AAccionador
         //If we have an object in hand, we update its position and smooth it out with basic interpolation.
         if (haveObject)
         {
-            carryObject.position = Vector3.Lerp(carryObject.position, dedo1.transform.position + camara.transform.forward*carryDistance , Time.deltaTime * 8);
+            //carryObject.position = Vector3.Lerp(carryObject.position, dedo1.transform.position + camara.transform.forward*carryDistance , Time.deltaTime * 8);
+            //Vector3 escala_global = new Vector3(carryObject.localScale, Space.World);
+            //carryObject.Translate(new Vector3(carryObject.localScale.y / 2f, 0, carryObject.localScale.y / 2f), Space.World);
+            if (carryObject.GetComponent<Collider>().tag == "CAJA")
+            {
+                Debug.Log("agarre la caja");
+                carryObject.position = dedo4.transform.position + camara.transform.forward * new Vector3(carryObject.localScale.y / 2f, 0, carryObject.localScale.y*5f).magnitude;
+            }
+            else 
+            {
+                carryObject.position = dedo4.transform.position + camara.transform.forward * new Vector3(carryObject.localScale.y / 2f, 0, carryObject.localScale.y).magnitude;
+            }
+            //carryObject.position = dedo4.transform.position + camara.transform.forward*new Vector3(carryObject.localScale.y / 2f, 0,carryObject.localScale.y).magnitude;// camara.transform.forward * carryObject.transform.localScale.y*carryDistance;
+            //carryObject.position = camara.transform.position + new Vector3(0f, 0f, 0.4f);
+            //carryObject.position = dedo4.transform.position + new Vector3(mesh.bounds.size.magnitude , 0, mesh.bounds.size.magnitude)*carryDistance;
+            //carryObject.position = referencia_picking.transform.position;
             carryObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
     }
