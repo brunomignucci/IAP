@@ -932,6 +932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go1: {fileID: 4491809832410067607}
   go2: {fileID: 9146152899991505168}
+  distancia_optima: 0.02
 --- !u!114 &8909910659566817564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,6 +1525,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go1: {fileID: 9146152899991505168}
   go2: {fileID: 4937379317011551134}
+  distancia_optima: 0.02
 --- !u!114 &1696437202413726646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,6 +1853,7 @@ Transform:
   - {fileID: 7788468440683442305}
   - {fileID: 6966611561267025661}
   - {fileID: 7354760702820131750}
+  - {fileID: 8529660460270586072}
   m_Father: {fileID: 4183862739086493148}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2288,6 +2291,36 @@ Transform:
   - {fileID: 6617288186452488447}
   m_Father: {fileID: 5615206422608951978}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2650773170335319541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8529660460270586072}
+  m_Layer: 0
+  m_Name: PickedObjectReference
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8529660460270586072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2650773170335319541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8843830589566563134}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2669988269825491746
 GameObject:
@@ -2997,6 +3030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go1: {fileID: 128164239486353936}
   go2: {fileID: 4937379317011551134}
+  distancia_optima: 0.02
 --- !u!114 &3608661916670578106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6946,10 +6980,12 @@ MonoBehaviour:
   planepoint1: {fileID: 8923347314685000729}
   planepoint2: {fileID: 2184708139227997724}
   planepoint3: {fileID: 8048448813071512120}
+  pickposref: {fileID: 2650773170335319541}
   raydist: 100
   layer:
     serializedVersion: 2
     m_Bits: 256
+  cam: {fileID: 0}
 --- !u!114 &1669731059942172305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6963,7 +6999,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   go1: {fileID: 9050342456982139606}
-  go2: {fileID: 9146152899991505168}
+  go2: {fileID: 7311508055182072485}
+  distancia_optima: 0.035
 --- !u!1 &6774885892951911949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8980,6 +9017,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   go1: {fileID: 8864084240434921275}
   go2: {fileID: 9146152899991505168}
+  distancia_optima: 0.02
 --- !u!114 &7282848248011630616
 MonoBehaviour:
   m_ObjectHideFlags: 0
