@@ -39,6 +39,8 @@ public class movementClient : NetworkBehaviour
     }
 
     public void moverPlayer(float delta) {
+		Vector3 direction = Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward));
+		delta = delta * GetComponent<PlayerSettings>().GetMovementSpeed();
 		//float mH = Input.GetAxis("Horizontal");
 		//float mV = Input.GetAxis("Vertical");
 
@@ -46,17 +48,19 @@ public class movementClient : NetworkBehaviour
 		//Vector3 v= Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward));
 		//rb.velocity = v * speed*direction;
 
-		//if (direction == -1) {
-		//    Debug.Log(" a punto de mover hacia atras");
-		//    Vector3 v = Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward));
-		//    rb.velocity = new Vector3(0f, 0f, 1f) * speed;
+		//if (delta < 0)
+		//{
+		//	//debug.log(" a punto de mover hacia atras");
+		//	vector3 v = vector3.normalize(vector3.scale(proj, clientcamera.transform.forward));
+		//	rb.velocity = new vector3(0f, 0f, 1f) * speed;
 		//}
-		//rb.AddForce(new Vector3(0f,0f,1f)*speed,ForceMode.Impulse);
+		//rb.AddForce(direction*delta,ForceMode.Impulse);
+		rb.MovePosition(transform.position + direction*delta);
 
 		//float delta = direction * Time.deltaTime * GetComponent<PlayerSettings>().GetMovementSpeed();
 		//transform.Translate(Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward)) * delta , Space.World);
-		delta = delta * GetComponent<PlayerSettings>().GetMovementSpeed();
-		transform.Translate(Vector3.Normalize(Vector3.Scale(proj, ClientCamera.transform.forward)) * delta, Space.World);
+		
+		//transform.Translate(direction * delta, Space.World);
 
 
 	}
