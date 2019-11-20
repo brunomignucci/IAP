@@ -3885,7 +3885,7 @@ GameObject:
   - component: {fileID: 3516148575657730439}
   - component: {fileID: 7902292514997575540}
   - component: {fileID: 6017034560195696528}
-  - component: {fileID: 5393012001058274003}
+  - component: {fileID: 5189293538459865629}
   m_Layer: 0
   m_Name: handl
   m_TagString: Untagged
@@ -3941,25 +3941,26 @@ MonoBehaviour:
   - {fileID: 5625705198090290133}
   - {fileID: 4691574647044128504}
   - {fileID: 4794375583402503962}
---- !u!95 &5393012001058274003
-Animator:
-  serializedVersion: 3
+--- !u!114 &5189293538459865629
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3961694829937169294}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d55dea98bb92ef42aef74010a57c17b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToSee: 100
+  highlightColor: {r: 0, g: 1, b: 0, a: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
+  planepoint1: {fileID: 7817234956957270081}
+  planepoint2: {fileID: 4534044562575660726}
+  planepoint3: {fileID: 110975273339169486}
 --- !u!1 &4312965403086393227
 GameObject:
   m_ObjectHideFlags: 0
@@ -6892,8 +6893,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4499076753168138750}
   - component: {fileID: 4289294020694961841}
-  - component: {fileID: 2286087080285833479}
   - component: {fileID: 953405318559351973}
+  - component: {fileID: 1669731059942172305}
   m_Layer: 0
   m_Name: pick_far
   m_TagString: Untagged
@@ -6929,20 +6930,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detector_gest: {fileID: 0}
   accionador: {fileID: 0}
---- !u!114 &2286087080285833479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6642099576447275710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 226d6cf0386c8f44ab048bd6382ea4e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  go1: {fileID: 9050342456982139606}
-  go2: {fileID: 9146152899991505168}
 --- !u!114 &953405318559351973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6955,16 +6942,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae8e61273d2dc74ebce60df98de6743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactLayer:
+  orig: {fileID: 2184708139227997724}
+  planepoint1: {fileID: 8923347314685000729}
+  planepoint2: {fileID: 2184708139227997724}
+  planepoint3: {fileID: 8048448813071512120}
+  raydist: 100
+  layer:
     serializedVersion: 2
     m_Bits: 256
-  camara: {fileID: 6620142064777556682}
-  dedo1: {fileID: 9161698103892573773}
-  dedo2: {fileID: 3096542810345621364}
-  palm: {fileID: 4534044562575660726}
-  ref1: {fileID: 4534044562575660726}
-  ref2: {fileID: 5170119601642711260}
-  ref3: {fileID: 7817234956957270081}
+--- !u!114 &1669731059942172305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642099576447275710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f335085b674472f49a700dedcd21e430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go1: {fileID: 9050342456982139606}
+  go2: {fileID: 9146152899991505168}
 --- !u!1 &6774885892951911949
 GameObject:
   m_ObjectHideFlags: 0
@@ -9360,7 +9359,7 @@ MonoBehaviour:
   interactLayer:
     serializedVersion: 2
     m_Bits: 256
-  camara: {fileID: 6620142064777556682}
+  camara: {fileID: 2114052951294502606}
   dedo1: {fileID: 4937379317011551134}
   dedo2: {fileID: 4491809832410067607}
   dedo3: {fileID: 6455585490157752663}
@@ -9556,6 +9555,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7961362942615141652}
     m_Modifications:
+    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
+        type: 3}
+      propertyPath: m_Name
+      value: Water_P_S
+      objectReference: {fileID: 0}
     - target: {fileID: 982607821520384851, guid: 679a01fa69b7d294198923fe88143ba7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9610,11 +9614,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
-        type: 3}
-      propertyPath: m_Name
-      value: Water_P_S
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679a01fa69b7d294198923fe88143ba7, type: 3}
