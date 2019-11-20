@@ -12,7 +12,7 @@ public class Server : NetworkBehaviour
 
 	public void mover_adelante_leap()
 	{
-		GetComponent<Client>().RpcMoverPlayer(1);
+		GetComponent<Client>().RpcMoverPlayer(1 * Time.deltaTime);
 	}
 
 	internal void SetSelectedHandMenuEntry(int i)
@@ -22,7 +22,7 @@ public class Server : NetworkBehaviour
 
 	public void mover_atras_leap()
 	{
-		GetComponent<Client>().RpcMoverPlayer(-1);
+		GetComponent<Client>().RpcMoverPlayer(-1 * Time.deltaTime);
 	}
 	// Start is called before the first frame update
 	void Start()
