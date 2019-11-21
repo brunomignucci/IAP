@@ -30,7 +30,7 @@ public class controlador_puente : MonoBehaviour
         //if (p0.activeSelf && p1.activeSelf && p2.activeSelf && p3.activeSelf && p4.activeSelf) {
         //    habilitar_paso = true;
         //}
-        if (p0.activeSelf && p1.activeSelf) { 
+        if (p0.activeSelf && p1.activeSelf && p2.activeSelf && p3.activeSelf && p4.activeSelf) { 
             habilitar_paso = true;
         }
     }
