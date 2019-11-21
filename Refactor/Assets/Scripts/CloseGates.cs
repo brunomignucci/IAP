@@ -28,16 +28,16 @@ public class CloseGates : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      // Origin = new Vector3 (GetComponent<Collider>().bounds.min.x + 0.015f,transform.position.y,transform.position.z);
-      // DistanceBetweenRays = (GetComponent<Collider>().bounds.size.x - 2 * 0.015f) / (10 - 1);
-      // for(int i=0; i< 10; i++){
-      //   Debug.DrawRay (Origin, Vector3.up , Color.yellow);
-      //   if(Physics.Raycast(Origin,Vector3.up,10))
-      //     active = true;
-      //   else{
-      //     Origin += new Vector3 (DistanceBetweenRays, 0,0 );
-      //   }
-      // }
+      Origin = new Vector3 (transform.position.x,transform.position.y,GetComponent<Collider>().bounds.min.z + 0.015f);
+      DistanceBetweenRays = (GetComponent<Collider>().bounds.size.z - 2 * 0.015f) / (10 - 1);
+      for(int i=0; i< 10; i++){
+        Debug.DrawRay (Origin, Vector3.up , Color.yellow);
+        if(Physics.Raycast(Origin,Vector3.up,10))
+          active = true;
+        else{
+          Origin += new Vector3 (0, 0, DistanceBetweenRays);
+        }
+      }
 
       if(active && !termine){
         if(arriba){
@@ -102,17 +102,17 @@ public class CloseGates : MonoBehaviour
     //   }
     // return false;
     // }
-    void OnTriggerEnter(Collider other){
-      Debug.Log("Object Entered the collider");
-      if(!active)
-        active = true;
-    }
-
-    void OnTriggerStay(Collider other){
-      Debug.Log("Object is within trigger");
-    }
-
-    void OnTriggerExit(Collider other){
-      Debug.Log("Object Exited Trigger");
-    }
+    // void OnTriggerEnter(Collider other){
+    //   Debug.Log("Object Entered the collider");
+    //   if(!active)
+    //     active = true;
+    // }
+    //
+    // void OnTriggerStay(Collider other){
+    //   Debug.Log("Object is within trigger");
+    // }
+    //
+    // void OnTriggerExit(Collider other){
+    //   Debug.Log("Object Exited Trigger");
+    // }
 }
