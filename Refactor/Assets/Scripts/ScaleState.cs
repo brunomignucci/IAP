@@ -27,14 +27,16 @@ public class ScaleState : State
       objeto.GetComponent<SpawnableObject>().ScaleObject(escala);
       Debug.Log(escala);
       if(!tipoEscalado){
-        escala += 0.01f;
+		//escala += 0.01f;
+		escala += Time.deltaTime;
         if(escala >= 2f){
 
           tipoEscalado = true;
         }
       }
       else{
-        escala -= 0.01f;
+		//escala -= 0.01f;
+		escala -= Time.deltaTime;
         if(escala <= 0.1f)
           tipoEscalado = false;
       }
