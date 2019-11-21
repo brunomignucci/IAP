@@ -35,7 +35,7 @@ public class logica_capturador_caja : MonoBehaviour
         else
         {
             cont = 0;
-            if (other.tag != "PLAYER")
+            if (other.tag != "UNDELETEABLE")
             {
                 Destroy(other.gameObject);
             }

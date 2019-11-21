@@ -31,7 +31,8 @@ public class logica_capturador_cubo : MonoBehaviour
             }
         }
         else {
-            cont = 0; if (other.tag != "PLAYER")
+            cont = 0;
+            if (other.tag != "UNDELETEABLE")
             {
                 Destroy(other.gameObject);
             }
