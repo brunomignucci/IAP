@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4308534500689485924}
   m_Layer: 0
   m_Name: R_pinky_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 1733813718743883875}
   m_Layer: 0
   m_Name: R_ring_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 7599833006970224267}
   m_Layer: 0
   m_Name: L_ring_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 906098536906448745}
   m_Layer: 0
   m_Name: R_index_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 6820568971554247288}
   m_Layer: 0
   m_Name: R_middle_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 6168752798022995937}
   m_Layer: 0
   m_Name: L_index_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 7689843067755008233}
   m_Layer: 0
   m_Name: R_ring_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -446,7 +446,7 @@ GameObject:
   - component: {fileID: 8087721919877739149}
   m_Layer: 0
   m_Name: toCreate
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -478,7 +478,7 @@ GameObject:
   - component: {fileID: 8704344352443401188}
   m_Layer: 0
   m_Name: R_pinky_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 2685268873886821162}
   m_Layer: 0
   m_Name: R_Wrist
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 2842984690350487204}
   m_Layer: 0
   m_Name: HandMenuEntry1
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 6033892227183075379}
   m_Layer: 0
   m_Name: L_index_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -805,7 +805,7 @@ GameObject:
   - component: {fileID: 6124123027334918776}
   m_Layer: 0
   m_Name: L_ring_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 8909910659566817564}
   m_Layer: 0
   m_Name: escalar
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 2245218022773290696}
   m_Layer: 0
   m_Name: L_pinky_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 6679920274300431234}
   m_Layer: 0
   m_Name: R_middle_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1065,7 +1065,7 @@ GameObject:
   - component: {fileID: 2407879757361415151}
   m_Layer: 0
   m_Name: L_middle_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1099,7 +1099,7 @@ GameObject:
   - component: {fileID: 1391692348368190023}
   m_Layer: 0
   m_Name: crear
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1170,7 +1170,7 @@ GameObject:
   - component: {fileID: 6371228423041314557}
   m_Layer: 0
   m_Name: R_middle_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1201,7 +1201,7 @@ GameObject:
   - component: {fileID: 5496609186910008941}
   m_Layer: 0
   m_Name: R_thumb_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1233,7 +1233,7 @@ GameObject:
   - component: {fileID: 1744292894088334515}
   m_Layer: 0
   m_Name: L_middle_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1293,7 +1293,7 @@ GameObject:
   - component: {fileID: 8277833804985878560}
   m_Layer: 0
   m_Name: select_cubo
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 1552810438505035484}
   m_Layer: 0
   m_Name: R_ring_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1399,7 +1399,7 @@ GameObject:
   - component: {fileID: 228394104933338261}
   m_Layer: 0
   m_Name: L_ring_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1478,7 +1478,7 @@ GameObject:
   - component: {fileID: 1696437202413726646}
   m_Layer: 0
   m_Name: agua_activar
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 5552828530235136095}
   m_Layer: 0
   m_Name: R_thumb_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1628,7 +1628,7 @@ GameObject:
   - component: {fileID: 1016074969216210433}
   m_Layer: 0
   m_Name: L_thumb_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 8711420381878852939}
   m_Layer: 0
   m_Name: R_middle_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1690,7 +1690,7 @@ GameObject:
   - component: {fileID: 4183862739086493148}
   m_Layer: 0
   m_Name: L_Wrist
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1723,7 +1723,7 @@ GameObject:
   - component: {fileID: 6950526238629222471}
   m_Layer: 0
   m_Name: R_pinky_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1799,7 +1799,7 @@ GameObject:
   - component: {fileID: 8220082508271467204}
   m_Layer: 0
   m_Name: L_ring_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 1997386203668256582}
   m_Layer: 0
   m_Name: L_Palm
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1887,7 +1887,7 @@ GameObject:
   - component: {fileID: 7852566737133460261}
   m_Layer: 0
   m_Name: L_ring_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1966,7 +1966,7 @@ GameObject:
   - component: {fileID: 9189987339847307729}
   m_Layer: 0
   m_Name: L_pinky_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2045,7 +2045,7 @@ GameObject:
   - component: {fileID: 6568207973444395000}
   m_Layer: 0
   m_Name: L_index_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2123,7 +2123,7 @@ GameObject:
   - component: {fileID: 4984336706872016737}
   m_Layer: 0
   m_Name: L_pinky_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2183,7 +2183,7 @@ GameObject:
   - component: {fileID: 869608025890333031}
   m_Layer: 0
   m_Name: Visor
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2272,7 +2272,7 @@ GameObject:
   - component: {fileID: 2449748082188213053}
   m_Layer: 0
   m_Name: R_pinky_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2303,7 +2303,7 @@ GameObject:
   - component: {fileID: 8529660460270586072}
   m_Layer: 0
   m_Name: PickedObjectReference
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2336,7 +2336,7 @@ GameObject:
   - component: {fileID: 3951213869143278845}
   m_Layer: 0
   m_Name: select_esfera
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2415,7 +2415,7 @@ GameObject:
   - component: {fileID: 828880471583505503}
   m_Layer: 0
   m_Name: LoPoly Rigged Hand Right
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2626,7 +2626,7 @@ GameObject:
   - component: {fileID: 1186533097572276912}
   m_Layer: 0
   m_Name: R_thumb_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2703,7 +2703,7 @@ GameObject:
   - component: {fileID: 5027899837374904738}
   m_Layer: 0
   m_Name: L_index_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2735,7 +2735,7 @@ GameObject:
   - component: {fileID: 7730903036952351053}
   m_Layer: 0
   m_Name: R_index_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2814,7 +2814,7 @@ GameObject:
   - component: {fileID: 5571750919227426785}
   m_Layer: 0
   m_Name: R_thumb_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2894,7 +2894,7 @@ GameObject:
   - component: {fileID: 7207008499537806951}
   m_Layer: 0
   m_Name: agua_desactivar
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2964,7 +2964,7 @@ GameObject:
   - component: {fileID: 8304800342389158349}
   m_Layer: 0
   m_Name: R_index_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2997,7 +2997,7 @@ GameObject:
   - component: {fileID: 120951285201229067}
   m_Layer: 0
   m_Name: mover_adelante
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3070,7 +3070,7 @@ GameObject:
   - component: {fileID: 8310617262656942543}
   m_Layer: 0
   m_Name: L_thumb_end
-  m_TagString: GORDO_IZQ
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3148,7 +3148,7 @@ GameObject:
   - component: {fileID: 179056098529188708}
   m_Layer: 0
   m_Name: L_pinky_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3226,7 +3226,7 @@ GameObject:
   - component: {fileID: 5164495660315342052}
   m_Layer: 0
   m_Name: HandMenu
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3272,7 +3272,7 @@ GameObject:
   - component: {fileID: 5873293318335075881}
   m_Layer: 0
   m_Name: LoPoly_Hand_Mesh_Left
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3379,7 +3379,7 @@ GameObject:
   - component: {fileID: 6163020327634525250}
   m_Layer: 0
   m_Name: R_ring_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3471,7 +3471,7 @@ GameObject:
   - component: {fileID: 6049969675091014237}
   m_Layer: 0
   m_Name: Player
-  m_TagString: PLAYER
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3797,7 +3797,7 @@ GameObject:
   - component: {fileID: 7961362942615141652}
   m_Layer: 0
   m_Name: Agua
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3830,7 +3830,7 @@ GameObject:
   - component: {fileID: 4892940630633619595}
   m_Layer: 0
   m_Name: R_middle_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3907,7 +3907,7 @@ GameObject:
   - component: {fileID: 6067337169080044119}
   m_Layer: 0
   m_Name: L_pinky_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3940,7 +3940,7 @@ GameObject:
   - component: {fileID: 5189293538459865629}
   m_Layer: 0
   m_Name: handl
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4026,7 +4026,7 @@ GameObject:
   - component: {fileID: 3162871911213860706}
   m_Layer: 0
   m_Name: R_pinky_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4103,7 +4103,7 @@ GameObject:
   - component: {fileID: 6483105467206338696}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4136,7 +4136,7 @@ GameObject:
   - component: {fileID: 2592158272569158264}
   m_Layer: 0
   m_Name: L_middle_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4214,7 +4214,7 @@ GameObject:
   - component: {fileID: 3569473638260560430}
   m_Layer: 0
   m_Name: R_index_c
-  m_TagString: INDICE_DER
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4276,7 +4276,7 @@ GameObject:
   - component: {fileID: 421668258746825990}
   m_Layer: 0
   m_Name: L_Palm
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4377,7 +4377,7 @@ GameObject:
   - component: {fileID: 6879489761649406055}
   m_Layer: 0
   m_Name: R_middle_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4455,7 +4455,7 @@ GameObject:
   - component: {fileID: 5249696214563957385}
   m_Layer: 0
   m_Name: L_pinky_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4534,7 +4534,7 @@ GameObject:
   - component: {fileID: 89826520979497926}
   m_Layer: 0
   m_Name: L_ring_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4614,7 +4614,7 @@ GameObject:
   - component: {fileID: 3625015349641605307}
   m_Layer: 0
   m_Name: mover_adelante_teclado
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4684,7 +4684,7 @@ GameObject:
   - component: {fileID: 3190629241003002646}
   m_Layer: 0
   m_Name: R_thumb_end
-  m_TagString: GORDO_DER
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4729,7 +4729,7 @@ GameObject:
   - component: {fileID: 3394011413041784133}
   m_Layer: 0
   m_Name: L_Wrist
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4808,7 +4808,7 @@ GameObject:
   - component: {fileID: 5098095563670322922}
   m_Layer: 0
   m_Name: R_index_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4887,7 +4887,7 @@ GameObject:
   - component: {fileID: 7914309877939379735}
   m_Layer: 0
   m_Name: L_middle_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4966,7 +4966,7 @@ GameObject:
   - component: {fileID: 7121724201035357512}
   m_Layer: 0
   m_Name: R_thumb_end
-  m_TagString: GORDO_DER
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5042,7 +5042,7 @@ GameObject:
   - component: {fileID: 3700785991219617592}
   m_Layer: 0
   m_Name: Avatar
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5074,7 +5074,7 @@ GameObject:
   - component: {fileID: 2560526972797231048}
   m_Layer: 0
   m_Name: referencia_pickfar
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5105,7 +5105,7 @@ GameObject:
   - component: {fileID: 1532472249819869595}
   m_Layer: 0
   m_Name: Player_control
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5149,7 +5149,7 @@ GameObject:
   - component: {fileID: 6672702994990299988}
   m_Layer: 0
   m_Name: L_thumb_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5208,7 +5208,7 @@ GameObject:
   - component: {fileID: 6098078285055325379}
   m_Layer: 0
   m_Name: L_thumb_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5288,7 +5288,7 @@ GameObject:
   - component: {fileID: 94701413844353355}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5379,7 +5379,7 @@ GameObject:
   - component: {fileID: 3265781704960069137}
   m_Layer: 0
   m_Name: L_index_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5438,7 +5438,7 @@ GameObject:
   - component: {fileID: 3219986190490702715}
   m_Layer: 0
   m_Name: L_middle_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5516,7 +5516,7 @@ GameObject:
   - component: {fileID: 4368446776110213572}
   m_Layer: 0
   m_Name: R_middle_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5573,7 +5573,7 @@ GameObject:
   - component: {fileID: 3321524556734525339}
   m_Layer: 0
   m_Name: R_index_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5606,7 +5606,7 @@ GameObject:
   - component: {fileID: 6348368281539362198}
   m_Layer: 0
   m_Name: R_index_c
-  m_TagString: INDICE_DER
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5685,7 +5685,7 @@ GameObject:
   - component: {fileID: 8805740542489516079}
   m_Layer: 0
   m_Name: L_middle_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5762,7 +5762,7 @@ GameObject:
   - component: {fileID: 8678648742541625457}
   m_Layer: 0
   m_Name: R_thumb_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5795,7 +5795,7 @@ GameObject:
   - component: {fileID: 8420967484751361161}
   m_Layer: 0
   m_Name: R_middle_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5872,7 +5872,7 @@ GameObject:
   - component: {fileID: 4794703948643304224}
   m_Layer: 0
   m_Name: L_middle_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5903,7 +5903,7 @@ GameObject:
   - component: {fileID: 9087622724822508143}
   m_Layer: 0
   m_Name: L_middle_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5934,7 +5934,7 @@ GameObject:
   - component: {fileID: 9018878086743484335}
   m_Layer: 0
   m_Name: R_ring_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5965,7 +5965,7 @@ GameObject:
   - component: {fileID: 6617288186452488447}
   m_Layer: 0
   m_Name: R_pinky_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5996,7 +5996,7 @@ GameObject:
   - component: {fileID: 4268817711990760995}
   m_Layer: 0
   m_Name: R_Wrist
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6027,7 +6027,7 @@ GameObject:
   - component: {fileID: 1166122976084730276}
   m_Layer: 0
   m_Name: Referencia_crear_objeto
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6060,7 +6060,7 @@ GameObject:
   - component: {fileID: 56749857547649791}
   m_Layer: 0
   m_Name: HandMenuEntry1
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6148,7 +6148,7 @@ GameObject:
   - component: {fileID: 7738315407898337152}
   m_Layer: 0
   m_Name: R_ring_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6181,7 +6181,7 @@ GameObject:
   - component: {fileID: 5988078578815821101}
   m_Layer: 0
   m_Name: R_middle_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6258,7 +6258,7 @@ GameObject:
   - component: {fileID: 3542192414188488905}
   m_Layer: 0
   m_Name: L_index_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6291,7 +6291,7 @@ GameObject:
   - component: {fileID: 7551301806950346577}
   m_Layer: 0
   m_Name: R_ring_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6368,7 +6368,7 @@ GameObject:
   - component: {fileID: 4245538907481865817}
   m_Layer: 0
   m_Name: L_ring_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6427,7 +6427,7 @@ GameObject:
   - component: {fileID: 5628081391404008981}
   m_Layer: 0
   m_Name: L_thumb_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6506,7 +6506,7 @@ GameObject:
   - component: {fileID: 9020609160826506571}
   m_Layer: 0
   m_Name: R_Palm
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6590,7 +6590,7 @@ GameObject:
   - component: {fileID: 4968212443552656463}
   m_Layer: 0
   m_Name: HandMenuEntry0
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6678,7 +6678,7 @@ GameObject:
   - component: {fileID: 5803017469835548949}
   m_Layer: 0
   m_Name: R_index_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6711,7 +6711,7 @@ GameObject:
   - component: {fileID: 2828802281403163314}
   m_Layer: 0
   m_Name: R_pinky_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6790,7 +6790,7 @@ GameObject:
   - component: {fileID: 6427667173319931072}
   m_Layer: 0
   m_Name: R_ring_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6869,7 +6869,7 @@ GameObject:
   - component: {fileID: 7662227567163311085}
   m_Layer: 0
   m_Name: R_pinky_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6949,7 +6949,7 @@ GameObject:
   - component: {fileID: 1669731059942172305}
   m_Layer: 0
   m_Name: pick_far
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7032,7 +7032,7 @@ GameObject:
   - component: {fileID: 1721878821446940208}
   m_Layer: 0
   m_Name: L_index_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7111,7 +7111,7 @@ GameObject:
   - component: {fileID: 150858646841925333}
   m_Layer: 0
   m_Name: R_index_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7188,7 +7188,7 @@ GameObject:
   - component: {fileID: 6262831456717601731}
   m_Layer: 0
   m_Name: R_index_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7249,7 +7249,7 @@ GameObject:
   - component: {fileID: 1580779114216390565}
   m_Layer: 0
   m_Name: LoPoly Rigged Hand Left
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7445,7 +7445,7 @@ GameObject:
   - component: {fileID: 5856928994616427924}
   m_Layer: 0
   m_Name: L_thumb_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7478,7 +7478,7 @@ GameObject:
   - component: {fileID: 5068729133559034382}
   m_Layer: 0
   m_Name: R_ring_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7556,7 +7556,7 @@ GameObject:
   - component: {fileID: 8768007313451522306}
   m_Layer: 0
   m_Name: R_thumb_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7615,7 +7615,7 @@ GameObject:
   - component: {fileID: 3451126740876201466}
   m_Layer: 0
   m_Name: ClientCamera
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7709,7 +7709,7 @@ GameObject:
   - component: {fileID: 3336295891254854825}
   m_Layer: 0
   m_Name: HandMenuEntry0
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7797,7 +7797,7 @@ GameObject:
   - component: {fileID: 1952582420639108057}
   m_Layer: 0
   m_Name: R_pinky_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7829,7 +7829,7 @@ GameObject:
   - component: {fileID: 3906517974380206347}
   m_Layer: 0
   m_Name: Leap Rig
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7891,7 +7891,7 @@ GameObject:
   - component: {fileID: 9168246941417482410}
   m_Layer: 0
   m_Name: L_index_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7922,7 +7922,7 @@ GameObject:
   - component: {fileID: 6075740595014789921}
   m_Layer: 0
   m_Name: refMovimiento
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7955,7 +7955,7 @@ GameObject:
   - component: {fileID: 8488964022800576486}
   m_Layer: 0
   m_Name: L_pinky_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8033,7 +8033,7 @@ GameObject:
   - component: {fileID: 3482170631062621453}
   m_Layer: 0
   m_Name: HandMenu
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8079,7 +8079,7 @@ GameObject:
   - component: {fileID: 3792502419614060128}
   m_Layer: 0
   m_Name: L_thumb_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8156,7 +8156,7 @@ GameObject:
   - component: {fileID: 8321311886096791954}
   m_Layer: 0
   m_Name: L_ring_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8188,7 +8188,7 @@ GameObject:
   - component: {fileID: 3149085888478574142}
   m_Layer: 0
   m_Name: R_ring_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8246,7 +8246,7 @@ GameObject:
   - component: {fileID: 4632859382078760469}
   m_Layer: 0
   m_Name: R_Palm
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8300,7 +8300,7 @@ GameObject:
   - component: {fileID: 2129357258341548367}
   m_Layer: 0
   m_Name: gravedad
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8372,7 +8372,7 @@ GameObject:
   - component: {fileID: 3883509727427676591}
   m_Layer: 0
   m_Name: handr
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8436,7 +8436,7 @@ GameObject:
   - component: {fileID: 2265633408552580346}
   m_Layer: 0
   m_Name: agua
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8468,7 +8468,7 @@ GameObject:
   - component: {fileID: 1576621006501673489}
   m_Layer: 0
   m_Name: L_ring_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8501,7 +8501,7 @@ GameObject:
   - component: {fileID: 5709159061424208790}
   m_Layer: 0
   m_Name: R_middle_meta
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8580,7 +8580,7 @@ GameObject:
   - component: {fileID: 494384652589937349}
   m_Layer: 0
   m_Name: Hand Models
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8649,7 +8649,7 @@ GameObject:
   - component: {fileID: 4869779679936633452}
   m_Layer: 0
   m_Name: Gestos
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8693,7 +8693,7 @@ GameObject:
   - component: {fileID: 4963939107072299860}
   m_Layer: 0
   m_Name: StateManager
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8770,7 +8770,7 @@ GameObject:
   - component: {fileID: 1042881077141874862}
   m_Layer: 0
   m_Name: L_middle_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8881,7 +8881,7 @@ GameObject:
   - component: {fileID: 8713825859984299375}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8978,7 +8978,7 @@ GameObject:
   - component: {fileID: 1581761805960864912}
   m_Layer: 0
   m_Name: Canvases 1
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9023,7 +9023,7 @@ GameObject:
   - component: {fileID: 8713825861324339597}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9099,7 +9099,7 @@ GameObject:
   - component: {fileID: 3410466021660217435}
   m_Layer: 0
   m_Name: LoPoly_Hand_Mesh_Right
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9205,7 +9205,7 @@ GameObject:
   - component: {fileID: 5317857020473294288}
   m_Layer: 0
   m_Name: R_pinky_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9253,7 +9253,7 @@ GameObject:
   - component: {fileID: 5966803143947181831}
   m_Layer: 0
   m_Name: mover_atras
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9324,7 +9324,7 @@ GameObject:
   - component: {fileID: 687182345333556407}
   m_Layer: 0
   m_Name: L_middle_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9354,7 +9354,7 @@ GameObject:
   - component: {fileID: 1829802872102768868}
   m_Layer: 0
   m_Name: L_pinky_b
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9385,7 +9385,7 @@ GameObject:
   - component: {fileID: 5319631725676605042}
   m_Layer: 0
   m_Name: L_pinky_a
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9416,7 +9416,7 @@ GameObject:
   - component: {fileID: 344211693304494394}
   m_Layer: 0
   m_Name: L_pinky_c
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9450,7 +9450,7 @@ GameObject:
   - component: {fileID: 246209112560907341}
   m_Layer: 0
   m_Name: ServerCamera
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9557,7 +9557,7 @@ GameObject:
   - component: {fileID: 2953948924200208366}
   m_Layer: 0
   m_Name: L_index_c
-  m_TagString: INDICE_IZQ
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9604,7 +9604,7 @@ GameObject:
   - component: {fileID: 6759424330066907909}
   m_Layer: 0
   m_Name: picking
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9683,7 +9683,7 @@ GameObject:
   - component: {fileID: 1139009015465049750}
   m_Layer: 0
   m_Name: FloagMenu
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9713,7 +9713,7 @@ GameObject:
   - component: {fileID: 2719097544804788635}
   m_Layer: 0
   m_Name: L_ring_end
-  m_TagString: Untagged
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9744,7 +9744,7 @@ GameObject:
   - component: {fileID: 1204594342061744291}
   m_Layer: 0
   m_Name: L_thumb_end
-  m_TagString: GORDO_IZQ
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9789,7 +9789,7 @@ GameObject:
   - component: {fileID: 2766420868511425396}
   m_Layer: 0
   m_Name: L_index_c
-  m_TagString: INDICE_IZQ
+  m_TagString: UNDELETEABLE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9862,11 +9862,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7961362942615141652}
     m_Modifications:
-    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
-        type: 3}
-      propertyPath: m_Name
-      value: Water_P_S
-      objectReference: {fileID: 0}
     - target: {fileID: 982607821520384851, guid: 679a01fa69b7d294198923fe88143ba7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9921,6 +9916,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
+        type: 3}
+      propertyPath: m_Name
+      value: Water_P_S
+      objectReference: {fileID: 0}
+    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
+        type: 3}
+      propertyPath: m_TagString
+      value: UNDELETEABLE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679a01fa69b7d294198923fe88143ba7, type: 3}

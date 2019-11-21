@@ -22,6 +22,14 @@ TagManager:
   - CAMARA
   - CAJA
   - PLAYER
+  - SUBNOPUENTE
+  - HUDPICK
+  - HUDCREATE
+  - COLLSUBNOPUENTE
+  - HUDWATER
+  - PASOPUENTE
+  - HAND
+  - UNDELETEABLE
   layers:
   - Default
   - TransparentFX
