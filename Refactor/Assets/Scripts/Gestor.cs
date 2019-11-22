@@ -19,7 +19,7 @@ public class Gestor : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (detector_gest.detect())
             accionador.accionar();

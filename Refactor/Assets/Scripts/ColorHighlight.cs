@@ -13,22 +13,25 @@ public class ColorHighlight : MonoBehaviour
 	[SerializeField]
 	private GameObject planepoint1,planepoint2,planepoint3;
 	private Plane plano;
+	private Vector3 center;
 
 	void Start()
 	{
 		//highlightColor = Color.green;
 		plano.Set3Points(planepoint1.transform.position, planepoint2.transform.position, planepoint3.transform.position);
+		center = Vector3.Lerp(Vector3.Lerp(planepoint1.transform.position,planepoint2.transform.position, 0.5f) , planepoint3.transform.position, 0.5f);
 	}
 
 
 	void Update()
 	{
 		plano.Set3Points(planepoint1.transform.position, planepoint2.transform.position, planepoint3.transform.position);
+		center = Vector3.Lerp(Vector3.Lerp(planepoint1.transform.position, planepoint2.transform.position, 0.5f), planepoint3.transform.position, 0.5f);
 
 		RaycastHit hitInfo;
 		Renderer currRend;
 
-		Debug.DrawRay(this.transform.position, plano.normal * distanceToSee, Color.magenta); 
+		//Debug.DrawRay(center, plano.normal * distanceToSee, Color.magenta); 
 
 		if (Physics.Raycast(this.transform.position, plano.normal, out hitInfo, distanceToSee,layer))
 		{

@@ -3785,7 +3785,6 @@ GameObject:
   - component: {fileID: 3516148575657730439}
   - component: {fileID: 7902292514997575540}
   - component: {fileID: 6017034560195696528}
-  - component: {fileID: 5189293538459865629}
   m_Layer: 0
   m_Name: handl
   m_TagString: UNDELETEABLE
@@ -3841,26 +3840,6 @@ MonoBehaviour:
   - {fileID: 5625705198090290133}
   - {fileID: 4691574647044128504}
   - {fileID: 4794375583402503962}
---- !u!114 &5189293538459865629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3961694829937169294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d55dea98bb92ef42aef74010a57c17b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanceToSee: 100
-  highlightColor: {r: 0, g: 1, b: 0, a: 0}
-  layer:
-    serializedVersion: 2
-    m_Bits: 256
-  planepoint1: {fileID: 7817234956957270081}
-  planepoint2: {fileID: 4534044562575660726}
-  planepoint3: {fileID: 110975273339169486}
 --- !u!1 &4312965403086393227
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,6 +4101,7 @@ GameObject:
   - component: {fileID: 995933653995078753}
   - component: {fileID: 4186464600231580636}
   - component: {fileID: 421668258746825990}
+  - component: {fileID: 6565359153639988500}
   m_Layer: 0
   m_Name: L_Palm
   m_TagString: UNDELETEABLE
@@ -4212,6 +4192,26 @@ MonoBehaviour:
   c: {fileID: 5170119601642711260}
   camara: {fileID: 7542236856677915805}
   menu: {fileID: 0}
+--- !u!114 &6565359153639988500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4534044562575660726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d55dea98bb92ef42aef74010a57c17b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToSee: 100
+  highlightColor: {r: 0, g: 1, b: 0, a: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
+  planepoint1: {fileID: 7817234956957270081}
+  planepoint2: {fileID: 4534044562575660726}
+  planepoint3: {fileID: 5170119601642711260}
 --- !u!1 &4625048302070479556
 GameObject:
   m_ObjectHideFlags: 0
@@ -6701,13 +6701,13 @@ MonoBehaviour:
   orig: {fileID: 2184708139227997724}
   planepoint1: {fileID: 8923347314685000729}
   planepoint2: {fileID: 2184708139227997724}
-  planepoint3: {fileID: 8048448813071512120}
+  planepoint3: {fileID: 5739777007085422219}
   pickposref: {fileID: 2650773170335319541}
-  raydist: 100
+  rayDist: 100
+  rayThickness: 0.05
   layer:
     serializedVersion: 2
     m_Bits: 256
-  rayThickness: 0.05
 --- !u!114 &1669731059942172305
 MonoBehaviour:
   m_ObjectHideFlags: 0
