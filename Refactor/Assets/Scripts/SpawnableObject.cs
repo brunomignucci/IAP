@@ -8,6 +8,8 @@ public class SpawnableObject : NetworkBehaviour
 
 	[SyncVar]
 	float scale;
+	[SyncVar]
+	Color color;
 
 	[ClientRpc]
 	void RpcScaleObject(float amount)
@@ -22,5 +24,21 @@ public class SpawnableObject : NetworkBehaviour
 
 		scale = newScale;
 		RpcScaleObject(scale);
+	}
+
+	[ClientRpc]
+	void RpcChangeColor(Color newColor)
+	{
+		this.GetComponent<Renderer>().material.color = newColor;
+	}
+
+	public void ChangeColor(Color newColor)
+	{
+		if (!isServer)
+			return;
+
+		color = newColor;
+		this.GetComponent<Renderer>().material.color = newColor;
+		RpcChangeColor(color);
 	}
 }

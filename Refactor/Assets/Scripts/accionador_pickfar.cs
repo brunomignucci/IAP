@@ -10,52 +10,64 @@ public class accionador_pickfar : AAccionador
 	[SerializeField]
 	private LayerMask layer;
 	[SerializeField]
-	private Camera cam;
+	private float rayThickness = 0.05f;
+	[SerializeField]
 	private Plane plano;
 	private RaycastHit hitInfo;
 	private GameObject pickedObject;
-	private Vector3 screenPoint;
-	private Vector3 offset;
+	private Vector3 zeroVelocity = new Vector3(0, 0, 0);
 
     public override void accionar()
     {
         accionar_pick();
+		Debug.Log("PICK FAR");
     }
 
     public void accionar_pick()
 	{
-		plano.Set3Points(planepoint1.transform.position, planepoint2.transform.position, planepoint3.transform.position);
-		if(pickedObject != null)
-		{
-			pickedObject.transform.position = pickposref.transform.position;
-		}
-
-		if (Physics.Raycast(orig.transform.position, plano.normal, out hitInfo, raydist, layer))
-		{
-			if(pickedObject == null)
+		// Si no hay objeto pickeado, lanzamos un rayo para encontrar algun objeto pickeable
+		if (pickedObject == null) {
+			plano.Set3Points(planepoint1.transform.position, planepoint2.transform.position, planepoint3.transform.position);
+			if (Physics.Raycast(orig.transform.position, plano.normal, out hitInfo, raydist, layer))
 			{
 				pickedObject = hitInfo.transform.gameObject;
-				pickedObject.GetComponent<Rigidbody>().isKinematic = true;
 				pickposref.transform.position = pickedObject.transform.position;
 			}
 		}
+		// Si habia un objeto pickeable, actualizamos su posicion
 		else
 		{
-			if (pickedObject != null)
+			pickedObject.transform.position = pickposref.transform.position;
+			pickedObject.GetComponent<Rigidbody>().velocity = zeroVelocity;
+		}
+
+
+	}
+
+	void start()
+	{
+		
+	}
+
+	private void FixedUpdate()
+	{
+		// Vemos si el objeto pickeado sigue siendo apuntado por el raycast
+		if (pickedObject != null) 
+		{ 
+			if (Physics.SphereCast(orig.transform.position, rayThickness, plano.normal, out hitInfo, raydist, layer))
 			{
-				pickedObject.GetComponent<Rigidbody>().isKinematic = false;
+				if (pickedObject != hitInfo.transform.gameObject)
+				{
+					if (! Physics.Raycast(orig.transform.position, plano.normal, out hitInfo, raydist, layer))
+					{
+						pickedObject = null;
+					}
+				}
+			}
+			else
+			{
 				pickedObject = null;
 			}
 		}
-		
-    }
-
-    void start()
-	{
-		plano.Set3Points(planepoint1.transform.position, planepoint2.transform.position, planepoint3.transform.position);
-	}
-
-	void Update()
-	{
 	}
 }

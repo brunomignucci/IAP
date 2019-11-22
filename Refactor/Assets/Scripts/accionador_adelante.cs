@@ -13,4 +13,12 @@ public class accionador_adelante : AAccionador
     {
         transform.root.GetComponent<Server>().mover_adelante_leap();
     }
+	private void Start()
+	{
+		
+	}
+	private void Update()
+	{
+		
+	}
 }

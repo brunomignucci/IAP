@@ -8,50 +8,45 @@ public class gesto_toque : ADetector_gesto
 {
     [SerializeField]
     GameObject go1, go2;
+	[SerializeField]
     private static float distancia_optima = 0.02f;
-    private static float distancia_reset = 0.07f;
+	[SerializeField]
+    private static float distancia_reset = 0.03f;
     private bool toque = false;//estado interno
 
     public override bool detect()
     {
-        return detecto_proximidad();
-    }
+		return (go1.activeInHierarchy && go2.activeInHierarchy) && detecto_proximidad();
+	}
 
     private bool detecto_proximidad()
     {
 		bool toReturn = false;
-        if (!toque) { 
-
-           Vector3 obj1, obj2;
-           float distancia;
-
-           obj1 = go1.transform.position;
-           obj2 = go2.transform.position;
-           distancia = (obj1 - obj2).magnitude;
-
-            if (distancia < distancia_optima)
-             {
-               
-                toque = true;
-                toReturn =  true;
-               
-            }
-            
+		float distancia = (go1.transform.position - go2.transform.position).magnitude;
+		if (!toque) { 
+			distancia = (go1.transform.position - go2.transform.position).magnitude;
+			toque = distancia < distancia_optima;
+			toReturn = toque;
         }
         else
         {
-            Vector3 obj1, obj2;
-            float distancia;
-
-            obj1 = go1.transform.position;
-            obj2 = go2.transform.position;
-            distancia = (obj1 - obj2).magnitude;
-
-            if (distancia_reset < distancia) toque = false;
-            toReturn= false;
-        }
+			if (distancia_reset < distancia)
+			{
+				toque = false;
+				toReturn = false;
+			}
+		}
 		return toReturn;
 
-      }
+    }
+
+	private void Start()
+	{
+		
+	}
+	private void Update()
+	{
+		
+	}
 }
 

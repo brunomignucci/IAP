@@ -29,4 +29,12 @@ public class gesto_alejar_dedos : ADetector_gesto
         
 
     }
+	private void Start()
+	{
+
+	}
+	private void Update()
+	{
+
+	}
 }

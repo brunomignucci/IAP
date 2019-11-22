@@ -25,9 +25,11 @@ public class BuildState : State
 			//else
 			//  newObject = Instantiate(esfera);
 			newObject = Instantiate(toCreate.transform.GetChild(0).gameObject);
+			newObject.GetComponent<MeshRenderer>().enabled = true;
 			Color colorRandom = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
-			newObject.GetComponent<Renderer>().material.SetColor("_Color", colorRandom);
+			//newObject.GetComponent<Renderer>().material.SetColor("_Color", colorRandom);
 			NetworkServer.Spawn(newObject);
+			newObject.GetComponent<SpawnableObject>().ChangeColor(colorRandom);
 			newObject.transform.position = referencia_posicion.transform.position;
 			newObject.transform.SetParent(parent.transform);
 			ctx.setState(next);

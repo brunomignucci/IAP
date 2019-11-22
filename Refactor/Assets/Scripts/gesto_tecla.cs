@@ -21,5 +21,14 @@ public class gesto_tecla : ADetector_gesto
 		return toReturn;
 
       }
+
+	private void Start()
+	{
+		
+	}
+	private void Update()
+	{
+		
+	}
 }
 

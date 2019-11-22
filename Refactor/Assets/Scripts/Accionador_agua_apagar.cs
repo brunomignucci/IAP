@@ -28,5 +28,13 @@ public class Accionador_agua_apagar : AAccionador
         }
         */
     }
-    
+	private void Start()
+	{
+		
+	}
+	private void Update()
+	{
+		
+	}
+
 }

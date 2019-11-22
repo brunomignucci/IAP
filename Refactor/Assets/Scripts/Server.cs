@@ -8,7 +8,8 @@ public class Server : NetworkBehaviour
 {
 	[SerializeField]
 	private GameObject LeapHandRight, LeapHandLeft, LeapRig;
-	private Component Cliente;
+	[SerializeField]
+	private int HandUpdateRate;
 
 	public void mover_adelante_leap()
 	{
@@ -31,8 +32,7 @@ public class Server : NetworkBehaviour
 		{
 			return;
 		}
-		InvokeRepeating("updateHands", 1, 0.01f);
-		Cliente = GetComponent<Client>();
+		InvokeRepeating("updateHands", 1, 1.0f / HandUpdateRate);
 	}
 
 	// Update is called once per frame
@@ -42,32 +42,6 @@ public class Server : NetworkBehaviour
 		{
 			return;
 		}
-
-		//if (Input.GetKey("z"))
-		//{
-		//	GetComponent<Client>().RpcRotarPlayer(new Vector3(0, 0, 1));
-		//}
-		//if (Input.GetKey("v"))
-		//{
-
-		//	GetComponent<Client>().RpcRotarPlayer(new Vector3(1, 0, 0));
-		//}
-		//if (Input.GetKey("y"))
-		//{
-
-		//	GetComponent<Client>().RpcRotarPlayer(new Vector3(0, 1, 0));
-		//}
-		//if (Input.GetKey("c"))
-		//{
-		//	GetComponent<Client>().RpcCentrarCamara();
-		//}
-
-		/*
-		if(LeapHandRight.GetComponent<leap_player_controller>().GetMovimiento() != 0)
-		{
-			GetComponent<Client>().RpcMoverPlayer(LeapHandRight.GetComponent<leap_player_controller>().GetMovimiento());
-		}
-        */
 	}
 
 	void updateHands()

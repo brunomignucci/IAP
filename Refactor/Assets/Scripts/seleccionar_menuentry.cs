@@ -23,6 +23,6 @@ public class seleccionar_menuentry : AAccionador
 		{
 			Destroy(toCreate.transform.GetChild(0).gameObject);
 		}
-		Instantiate(prefab, toCreate.transform);
+		Instantiate(prefab, toCreate.transform).GetComponent<MeshRenderer>().enabled = false;
 	}
 }

@@ -13,6 +13,15 @@ public class accionador_atras : AAccionador
     {
         transform.root.GetComponent<Server>().mover_atras_leap();
     }
+
+	private void Start()
+	{
+		
+	}
+	private void Update()
+	{
+		
+	}
 }
 
         
