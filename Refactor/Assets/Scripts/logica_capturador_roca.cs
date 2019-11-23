@@ -34,7 +34,7 @@ public class logica_capturador_roca : MonoBehaviour
         }
         else
         {
-            cont = 0; if (other.tag != "UNDELETEABLE")
+            cont = 0; if (other.tag != "UNDELETEABLE" || other.tag != "PLAYER")
             {
                 Destroy(other.gameObject);
             }
