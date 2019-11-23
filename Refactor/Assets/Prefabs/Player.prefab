@@ -2933,6 +2933,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detector_gest: {fileID: 0}
   accionador: {fileID: 0}
+--- !u!1 &3096434166029343293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2938070285842950637}
+  - component: {fileID: 673230806375969386}
+  - component: {fileID: 2288129438081556822}
+  - component: {fileID: 4456708911779168519}
+  m_Layer: 0
+  m_Name: levantarPiedras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2938070285842950637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096434166029343293}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4869779679936633452}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673230806375969386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096434166029343293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47e4b60331a376941b664ad8a96fd1c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detector_gest: {fileID: 0}
+  accionador: {fileID: 0}
+--- !u!114 &2288129438081556822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096434166029343293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3796aba3f6d55f14faf5a711c971d300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tecla: Z
+--- !u!114 &4456708911779168519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096434166029343293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172dc5427662ec74da13c64fbc882870, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3096542810345621364
 GameObject:
   m_ObjectHideFlags: 0
@@ -8330,6 +8402,7 @@ Transform:
   - {fileID: 4917705426734553919}
   - {fileID: 2265633408552580346}
   - {fileID: 4499076753168138750}
+  - {fileID: 2938070285842950637}
   m_Father: {fileID: 7168067869415826694}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9515,16 +9588,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7961362942615141652}
     m_Modifications:
-    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
-        type: 3}
-      propertyPath: m_Name
-      value: Water_P_S
-      objectReference: {fileID: 0}
-    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
-        type: 3}
-      propertyPath: m_TagString
-      value: UNDELETEABLE
-      objectReference: {fileID: 0}
     - target: {fileID: 982607821520384851, guid: 679a01fa69b7d294198923fe88143ba7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9579,6 +9642,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
+        type: 3}
+      propertyPath: m_Name
+      value: Water_P_S
+      objectReference: {fileID: 0}
+    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
+        type: 3}
+      propertyPath: m_TagString
+      value: UNDELETEABLE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679a01fa69b7d294198923fe88143ba7, type: 3}
