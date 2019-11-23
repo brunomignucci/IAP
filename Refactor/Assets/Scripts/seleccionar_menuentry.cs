@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class seleccionar_menuentry : AAccionador
 {
 
@@ -14,8 +14,11 @@ public class seleccionar_menuentry : AAccionador
 	[SerializeField]
 	private GameObject toCreate;
 
+	private Text TextHUD;
+
 	public override void accionar()
 	{
+		TextHUD.text = prefab.tag;
 		menu.SelectEntry(menuentry);
 		transform.root.GetComponent<Server>().SetSelectedHandMenuEntry(menuentry.transform.GetSiblingIndex());
 
@@ -24,5 +27,9 @@ public class seleccionar_menuentry : AAccionador
 			Destroy(toCreate.transform.GetChild(0).gameObject);
 		}
 		Instantiate(prefab, toCreate.transform).GetComponent<MeshRenderer>().enabled = false;
+	}
+
+	void Start(){
+		TextHUD = GameObject.Find("ObjetoACrear").GetComponent<Text>();
 	}
 }

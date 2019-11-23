@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class controlador_puente : MonoBehaviour
 {
@@ -9,9 +11,10 @@ public class controlador_puente : MonoBehaviour
     GameObject puente,collider_paso;
     GameObject p0, p1, p2, p3, p4;
     bool habilitar_paso;
-
+    private Text textoMision;
     void Start()
     {
+        textoMision = GameObject.Find("Mision").GetComponent<Text>();
         p0 = puente.transform.GetChild(0).gameObject;
         p1 = puente.transform.GetChild(1).gameObject;
         p2 = puente.transform.GetChild(2).gameObject;
@@ -30,8 +33,11 @@ public class controlador_puente : MonoBehaviour
         //if (p0.activeSelf && p1.activeSelf && p2.activeSelf && p3.activeSelf && p4.activeSelf) {
         //    habilitar_paso = true;
         //}
-        if (p0.activeSelf && p1.activeSelf && p2.activeSelf && p3.activeSelf && p4.activeSelf) { 
+        if (p0.activeSelf && p1.activeSelf && p2.activeSelf && p3.activeSelf && p4.activeSelf) {
             habilitar_paso = true;
+            //Cambio la mision a la del fuego
+            textoMision.text = "Apagar \n Fuego";
+
         }
     }
 }
