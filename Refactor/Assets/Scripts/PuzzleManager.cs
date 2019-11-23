@@ -82,6 +82,7 @@ public class PuzzleManager : MonoBehaviour
         Debug.Log("Puzzle Completo");
         completo = true;
         puerta.abrirPuerta();
+
       }
     }
 
