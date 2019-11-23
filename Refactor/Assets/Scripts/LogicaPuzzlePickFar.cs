@@ -6,7 +6,7 @@ public class LogicaPuzzlePickFar : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
-    GameObject player,portal1,pos_inicial_step2,pos_inicial_step3,pos_final,detector1;
+    GameObject player,portal1,portal2,portal3,pos_inicial_step2,pos_inicial_step3,pos_final,detector1,detector2,detector3;
 
     Vector3 pos_inicial;
 
@@ -44,7 +44,35 @@ public class LogicaPuzzlePickFar : MonoBehaviour
                 step1 = true;
             }
         }
-        
+        if (!step2)
+        {
+            if (!activar_portal2 && detector2.activeSelf)
+            {
+                portal2.SetActive(true);
+                activar_portal2 = true;
+            }
+            if (((player.transform.position - portal2.transform.GetChild(0).position).magnitude) < 1.2f)
+            {
+                Debug.Log("toque el portal 2");
+                player.transform.position = pos_inicial_step3.transform.position;
+                step2 = true;
+            }
+        }
+        if (!step3)
+        {
+            if (!activar_portal3 && detector3.activeSelf)
+            {
+                portal3.SetActive(true);
+                activar_portal3 = true;
+            }
+            if (((player.transform.position - portal2.transform.GetChild(0).position).magnitude) < 1.2f)
+            {
+                Debug.Log("toque el portal 3");
+                player.transform.position = pos_final.transform.position;
+                step3 = true;
+            }
+        }
+
 
     }
     private void OnTriggerEnter(Collider other)

@@ -33,6 +33,8 @@ TagManager:
   - PORTAL1
   - DETECTOR1
   - ARBOLES
+  - PORTAL2
+  - PORTAL3
   layers:
   - Default
   - TransparentFX
