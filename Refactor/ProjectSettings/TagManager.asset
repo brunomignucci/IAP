@@ -32,6 +32,7 @@ TagManager:
   - UNDELETEABLE
   - PORTAL1
   - DETECTOR1
+  - ARBOLES
   layers:
   - Default
   - TransparentFX

@@ -25,7 +25,7 @@ public class ScriptAgua : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(rayo, out hit, 10.0f))
         {
-            GameObject.Find("Fuego").GetComponent<apagar_fuego>().apagar();
+            if(hit.transform.parent!=null && hit.transform.parent.tag=="ARBOLES") GameObject.Find("Fuego").GetComponent<apagar_fuego>().apagar();
             //Debug.Log("Apagando");
         }
         

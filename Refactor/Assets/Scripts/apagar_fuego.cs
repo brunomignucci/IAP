@@ -11,7 +11,7 @@ public class apagar_fuego : MonoBehaviour
     {
         contador = 0;
         cantidad_hijos = this.transform.childCount;
-        Debug.Log(cantidad_hijos);
+        //Debug.Log(cantidad_hijos);
     }
     public void apagar()
     {
