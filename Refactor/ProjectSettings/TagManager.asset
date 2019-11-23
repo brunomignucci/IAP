@@ -30,6 +30,8 @@ TagManager:
   - PASOPUENTE
   - HAND
   - UNDELETEABLE
+  - PORTAL1
+  - DETECTOR1
   layers:
   - Default
   - TransparentFX

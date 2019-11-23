@@ -19,7 +19,7 @@ public class accionador_pickfar : AAccionador
 	public override void accionar()
     {
         accionar_pick();
-		Debug.Log("PICK FAR");
+		//Debug.Log("PICK FAR");
     }
 
     public void accionar_pick()
