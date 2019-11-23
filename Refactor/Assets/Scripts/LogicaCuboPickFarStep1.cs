@@ -6,13 +6,15 @@ public class LogicaCuboPickFarStep1 : MonoBehaviour
 {
     [SerializeField]
     GameObject detector;
-    private int cont;
+    private int cont; 
     private Vector3 pos_inicial;
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         cont = 0;
         pos_inicial = transform.position;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -20,6 +22,7 @@ public class LogicaCuboPickFarStep1 : MonoBehaviour
     {
         if (transform.position.y < -10f) { // por si se cae
             transform.position = pos_inicial;
+            rb.velocity = new Vector3(0,0,0);
         }
     }
 
