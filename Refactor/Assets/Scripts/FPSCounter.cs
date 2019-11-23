@@ -1,8 +1,8 @@
 ﻿
- 
+
 using UnityEngine;
 using System.Collections;
- 
+
 public class FPSCounter : MonoBehaviour
 {
 
@@ -37,6 +37,6 @@ public class FPSCounter : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width - 100, 10, 150, 20), fps);
+        GUI.Label(new Rect(Screen.width - 100, 80, 150, 20), fps);
     }
 }
