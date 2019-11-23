@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class accionador_levantarPiedras : AAccionador
 {
@@ -10,7 +11,8 @@ public class accionador_levantarPiedras : AAccionador
     private int size;
     private TriggerPiedras scriptPiedras;
     private bool activadoLocal;
-
+    private Text GravityStatus;
+    private Text Mision;
     public override void accionar()
     {
       if(scriptPiedras.activated && !activadoLocal){
@@ -38,6 +40,8 @@ public class accionador_levantarPiedras : AAccionador
         size = listaPiedras.transform.childCount;
         scriptPiedras = triggerPiedras.GetComponent<TriggerPiedras>();
         activadoLocal = false;
+        GravityStatus = GameObject.Find("GravityStatus").GetComponent<Text>();
+        Mision = GameObject.Find("Mision").GetComponent<Text>();
     }
 
     // Update is called once per frame
