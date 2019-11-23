@@ -65,7 +65,7 @@ public class LogicaPuzzlePickFar : MonoBehaviour
                 portal3.SetActive(true);
                 activar_portal3 = true;
             }
-            if (((player.transform.position - portal3.transform.GetChild(0).position).magnitude) < 1.2f)
+            if (((player.transform.position - portal3.transform.GetChild(0).position).magnitude) < 0.7f)
             {
                 Debug.Log("toque el portal 3");
                 player.transform.position = pos_final.transform.position;

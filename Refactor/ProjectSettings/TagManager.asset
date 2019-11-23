@@ -35,6 +35,8 @@ TagManager:
   - ARBOLES
   - PORTAL2
   - PORTAL3
+  - DETECTOR
+  - DETECTORFINAL
   layers:
   - Default
   - TransparentFX
