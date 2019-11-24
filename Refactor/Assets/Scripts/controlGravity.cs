@@ -13,13 +13,13 @@ public class controlGravity : AAccionador
     void Start()
     {
       lista = GameObject.Find("/ListaObjetosCreados");
-      textoGravedad = GameObject.Find("GravityStatus").GetComponent<Text>();
+      //textoGravedad = GameObject.Find("GravityStatus").GetComponent<Text>();
     }
 
     public override void accionar()
     {
         if(activated){
-          textoGravedad.text = "OFF";
+          //textoGravedad.text = "OFF";
           Physics.gravity = new Vector3(0.0f, 0.0f, 0.0f);
           int size = lista.transform.childCount;
           activated = false;
@@ -31,7 +31,7 @@ public class controlGravity : AAccionador
           }
         }
         else{
-          textoGravedad.text = "ON";
+          //textoGravedad.text = "ON";
           activated = true;
           Physics.gravity = new Vector3(0f,-9.8f,0f);
         }

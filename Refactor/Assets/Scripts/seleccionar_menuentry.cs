@@ -14,11 +14,11 @@ public class seleccionar_menuentry : AAccionador
 	[SerializeField]
 	private GameObject toCreate;
 
-	private Text TextHUD;
+	//private Text TextHUD;
 
 	public override void accionar()
 	{
-		TextHUD.text = prefab.tag;
+		//TextHUD.text = prefab.tag;
 		menu.SelectEntry(menuentry);
 		transform.root.GetComponent<Server>().SetSelectedHandMenuEntry(menuentry.transform.GetSiblingIndex());
 
@@ -30,6 +30,6 @@ public class seleccionar_menuentry : AAccionador
 	}
 
 	void Start(){
-		TextHUD = GameObject.Find("ObjetoACrear").GetComponent<Text>();
+		//TextHUD = GameObject.Find("ObjetoACrear").GetComponent<Text>();
 	}
 }
