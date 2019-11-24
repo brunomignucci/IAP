@@ -42,8 +42,9 @@ public class PuzzleManager : MonoBehaviour
         Debug.Log(completoPilar4);
         Debug.Log(rotationPanel4.transform.rotation.eulerAngles.y);
       }
-      if(rotationPanel1.transform.rotation.eulerAngles.y == 180f){
+      if(rotationPanel1.transform.localRotation.eulerAngles.y == 180f){
         completoPilar1 = true;
+          Debug.Log("Completado Pilar 1");
         pilar1.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -51,8 +52,9 @@ public class PuzzleManager : MonoBehaviour
         pilar1.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
       }
 
-      if(rotationPanel2.transform.rotation.eulerAngles.y == 270f){
+      if(rotationPanel2.transform.localRotation.eulerAngles.y == 270f){
         completoPilar2 = true;
+          Debug.Log("Completado Pilar 2");
         pilar2.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -60,8 +62,9 @@ public class PuzzleManager : MonoBehaviour
         pilar2.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
       }
 
-      if(rotationPanel3.transform.rotation.eulerAngles.y == 90f){
+      if(rotationPanel3.transform.localRotation.eulerAngles.y == 90f){
         completoPilar3 = true;
+          Debug.Log("Completado Pilar 3");
         pilar3.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -69,8 +72,9 @@ public class PuzzleManager : MonoBehaviour
         pilar3.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
       }
 
-      if(rotationPanel4.transform.rotation.eulerAngles.y >= 0 && rotationPanel4.transform.rotation.eulerAngles.y < 0.1){
+      if(rotationPanel4.transform.localRotation.eulerAngles.y >= 0 && rotationPanel4.transform.localRotation.eulerAngles.y < 0.1){
         completoPilar4 = true;
+        Debug.Log("Completado Pilar 4");
         pilar4.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -82,7 +86,6 @@ public class PuzzleManager : MonoBehaviour
         Debug.Log("Puzzle Completo");
         completo = true;
         puerta.abrirPuerta();
-
       }
     }
 

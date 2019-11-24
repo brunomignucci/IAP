@@ -22,7 +22,7 @@ public class accionador_levantarPiedras : AAccionador
             GameObject piedra = listaPiedras.transform.GetChild(i).gameObject;
             Rigidbody rb = piedra.GetComponent<Rigidbody>();
             rb.useGravity = false;
-            float fuerzaAleatoria = UnityEngine.Random.Range(5f, 10f) * 500.0f;
+            float fuerzaAleatoria = UnityEngine.Random.Range(5f, 10f) * 2000.0f;
             rb.AddForce(transform.up * fuerzaAleatoria);
           }
         }
