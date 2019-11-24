@@ -2872,7 +2872,7 @@ GameObject:
   - component: {fileID: 6041662960677346918}
   - component: {fileID: 8863877294432449330}
   m_Layer: 0
-  m_Name: AudioManager
+  m_Name: Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3001,7 +3001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 6041662960677346918}
-  otherClip: {fileID: 0}
 --- !u!1 &3004503746524598302
 GameObject:
   m_ObjectHideFlags: 0

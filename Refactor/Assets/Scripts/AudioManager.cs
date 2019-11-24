@@ -6,8 +6,8 @@ public class AudioManager : MonoBehaviour
 {
 
     public AudioSource audioSource;
-    public AudioClip otherClip;
-    private float FadeTime = 5f;
+    private AudioClip otherClip;
+    private float FadeTime = 2f;
     private float startVolume;
     private bool cambiar = false;
     private bool apagado = false;
@@ -23,29 +23,13 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
       Debug.Log("Tengo Update");
-      if(!cambiar){
-        if(Input.GetKeyDown("m")){
-          Debug.Log("Aprete");
-          cambiar = true;
-
-
-          //cambiar = true;
-        }
-      }
       changeSong(otherClip);
-
-
-      // if(subir){
-      //   audioSource.volume += startVolume * Time.deltaTime / FadeTime;
-      //   if(audioSource.volume == startVolume){
-      //     Debug.Log("Ya esta todo el sonido");
-      //     subir = false;
-      //     cambiar = false;
-      //   }
-      //}
-
     }
 
+    public void setNewSong(AudioClip newSong){
+      otherClip = newSong;
+      cambiar = true;
+    }
 
     public void changeSong(AudioClip newSong){
       if(cambiar){
