@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CargadorEscenaFinal : MonoBehaviour
+public class CargadorEscenas : MonoBehaviour
 {
+	[SerializeField]
+	string sceneName, triggerTag;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +19,9 @@ public class CargadorEscenaFinal : MonoBehaviour
     }
 	private void OnTriggerEnter(Collider other)
 	{
-		if(other.tag == "DETECTORFINAL")
+		if(other.tag == triggerTag)
 		{
-			GameObject.Find("ManejadorEscenas").GetComponent<ManejadorEscenas>().CargarEscena();
+			GameObject.Find("ManejadorEscenas").GetComponent<ManejadorEscenas>().CargarEscena(sceneName, this.gameObject);
 		}
 	}
 }
