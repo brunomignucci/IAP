@@ -24,7 +24,7 @@ public class apagar_fuego : MonoBehaviour
         if (contador % 20 == 0 && contador / 20 <= cantidad_hijos)
         {
             //Debug.Log("script_apagar");
-            Debug.Log(contador);
+            //Debug.Log(contador);
             fuego_a_apagar.transform.GetChild(0).gameObject.SetActive(false);
 
         }
