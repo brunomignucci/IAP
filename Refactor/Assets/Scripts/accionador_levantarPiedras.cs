@@ -11,13 +11,15 @@ public class accionador_levantarPiedras : AAccionador
     private int size;
     private TriggerPiedras scriptPiedras;
     private bool activadoLocal;
+    private GameObject bloqueo;
 
     public override void accionar()
     {
       if(!activadoLocal){
         if(scriptPiedras.activated){
           activadoLocal = true;
-          listaPiedras.GetComponent<Collider>().enabled = false;
+          bloqueo.transform.Translate(new Vector3(100f,0,0),Space.World);
+          //bloqueo.SetActive(false);
           for(int i=0; i<size; i++){
             GameObject piedra = listaPiedras.transform.GetChild(i).gameObject;
             Rigidbody rb = piedra.GetComponent<Rigidbody>();
@@ -37,6 +39,7 @@ public class accionador_levantarPiedras : AAccionador
         size = listaPiedras.transform.childCount;
         scriptPiedras = triggerPiedras.GetComponent<TriggerPiedras>();
         activadoLocal = false;
+        bloqueo = GameObject.Find("BloqueoPiedras").gameObject;
     }
 
     // Update is called once per frame
