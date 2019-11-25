@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class flotante : MonoBehaviour
+public class Flotante : MonoBehaviour
 {
     private int cont;
     private bool subir;

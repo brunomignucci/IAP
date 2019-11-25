@@ -44,7 +44,7 @@ public class PuzzleManager : MonoBehaviour
       }
       if(rotationPanel1.transform.localRotation.eulerAngles.y == 180f){
         completoPilar1 = true;
-          Debug.Log("Completado Pilar 1");
+          //Debug.Log("Completado Pilar 1");
         pilar1.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -54,7 +54,7 @@ public class PuzzleManager : MonoBehaviour
 
       if(rotationPanel2.transform.localRotation.eulerAngles.y == 270f){
         completoPilar2 = true;
-          Debug.Log("Completado Pilar 2");
+         // Debug.Log("Completado Pilar 2");
         pilar2.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -64,7 +64,7 @@ public class PuzzleManager : MonoBehaviour
 
       if(rotationPanel3.transform.localRotation.eulerAngles.y == 90f){
         completoPilar3 = true;
-          Debug.Log("Completado Pilar 3");
+         // Debug.Log("Completado Pilar 3");
         pilar3.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -74,7 +74,7 @@ public class PuzzleManager : MonoBehaviour
 
       if(rotationPanel4.transform.localRotation.eulerAngles.y >= 0 && rotationPanel4.transform.localRotation.eulerAngles.y < 0.1){
         completoPilar4 = true;
-        Debug.Log("Completado Pilar 4");
+        //Debug.Log("Completado Pilar 4");
         pilar4.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
       }
       else{
@@ -83,7 +83,7 @@ public class PuzzleManager : MonoBehaviour
       }
 
       if(completoPilar1 && completoPilar2 && completoPilar3 && completoPilar4 && !completo){
-        Debug.Log("Puzzle Completo");
+       // Debug.Log("Puzzle Completo");
         completo = true;
         puerta.abrirPuerta();
       }

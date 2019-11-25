@@ -9,7 +9,7 @@ using UnityEngine.Networking;
      
      */
 
-public class movementClient : NetworkBehaviour
+public class MovementClient : NetworkBehaviour
 {
 	[SerializeField]
 	private GameObject ClientHandRight, ClientHandLeft, ClientCamera, Head;

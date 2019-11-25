@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Rotar1 : MonoBehaviour
+public class RotarLeapReference : NetworkBehaviour
 {
     // Start is called before the first frame update
     void Start()

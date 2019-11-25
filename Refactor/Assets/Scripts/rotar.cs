@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotar : MonoBehaviour
+public class Rotar : MonoBehaviour
 {
     [SerializeField]
     private GameObject obj;

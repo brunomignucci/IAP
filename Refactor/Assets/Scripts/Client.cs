@@ -44,7 +44,7 @@ public class Client : NetworkBehaviour
 	[ClientRpc]
 	public void RpcMoverPlayer(float delta)
 	{
-        GetComponent<movementClient>().moverPlayer(delta);
+        GetComponent<MovementClient>().moverPlayer(delta);
 	}
 
 	[ClientRpc]

@@ -31,9 +31,9 @@ public class RotatePuzzle : MonoBehaviour
       Debug.DrawRay (transform.position, Vector3.up , Color.yellow);
       //Debug.DrawRay (transform.position, Vector3.down, Color.yellow);
       if(termineMov){
-        Debug.Log("Termine y puedo entrar");
+        //Debug.Log("Termine y puedo entrar");
         if(!debounce && (Physics.Raycast(transform.position,Vector3.up,2))){
-          Debug.Log("Entro");
+          //Debug.Log("Entro");
           debounce = true;
           target = Quaternion.Euler(0,toRotate.transform.localRotation.eulerAngles.y + 90f, 0);
           GetComponent<Renderer>().material.SetColor("_Color", Color.green);
@@ -45,9 +45,9 @@ public class RotatePuzzle : MonoBehaviour
         }
       }
       if(toRotate.transform.localRotation != target){ //Si todavia no llego a destino
-        Debug.Log(toRotate.transform.localRotation.eulerAngles);
+        //Debug.Log(toRotate.transform.localRotation.eulerAngles);
         toRotate.transform.localRotation = Quaternion.Slerp(toRotate.transform.localRotation,target,velocidad * Time.deltaTime);
-        Debug.Log("Sigo Moviendo");
+        //Debug.Log("Sigo Moviendo");
       }
       else{ //Si ya llego a destino..... o esta muy cerca como para detectar una diferencia (Problema de precision)
         toRotate.transform.localRotation = Quaternion.Euler(0,Mathf.Ceil(toRotate.transform.localRotation.eulerAngles.y),0);//Lo llevo al numero entero mas cercano

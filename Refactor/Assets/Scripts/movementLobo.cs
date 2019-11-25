@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class movementLobo : MonoBehaviour
+public class MovementLobo : MonoBehaviour
 {
     // Start is called before the first frame update
 

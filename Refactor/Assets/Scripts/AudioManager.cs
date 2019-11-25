@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      Debug.Log("Tengo Update");
+      //Debug.Log("Tengo Update");
       changeSong(otherClip);
     }
 
@@ -33,20 +33,20 @@ public class AudioManager : MonoBehaviour
 
     public void changeSong(AudioClip newSong){
       if(cambiar){
-        Debug.Log("Bajo el volumen");
+        //Debug.Log("Bajo el volumen");
         if(!subir){
         audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
         if(audioSource.volume <= 0f){
-          Debug.Log("Entre a apagar, una sola vez");
+          //Debug.Log("Entre a apagar, una sola vez");
           audioSource.clip = otherClip;
           subir = true;
         }
       }
         if(subir){
-          Debug.Log("Entre a subir");
+         // Debug.Log("Entre a subir");
           audioSource.volume += startVolume * Time.deltaTime / FadeTime;
           if(audioSource.volume >= startVolume){
-            Debug.Log("Pongo a reproducri, una sola vez");
+           // Debug.Log("Pongo a reproducri, una sola vez");
             audioSource.Play();
             subir = false;
             cambiar = false;

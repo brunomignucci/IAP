@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class controlGravity : AAccionador
+public class ControlGravity : AAccionador
 {
     private bool activated = true;
     private GameObject lista;

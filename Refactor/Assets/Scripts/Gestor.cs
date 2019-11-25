@@ -6,7 +6,7 @@ public class Gestor : MonoBehaviour
 {
 
     [SerializeField]
-    private ADetector_gesto detector_gest;
+    private ADetectorGesto detector_gest;
     [SerializeField]
     private AAccionador accionador;
     [SerializeField]
@@ -14,7 +14,7 @@ public class Gestor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        detector_gest = GetComponent<ADetector_gesto>();
+        detector_gest = GetComponent<ADetectorGesto>();
         accionador = GetComponent<AAccionador>();
     }
 

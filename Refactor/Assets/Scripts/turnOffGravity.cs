@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class turnOffGravity : MonoBehaviour
+public class TurnOffGravity : MonoBehaviour
 {
     public GameObject pinky_right;
     public GameObject pinky_left;

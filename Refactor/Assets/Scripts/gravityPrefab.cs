@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gravityPrefab : MonoBehaviour
+public class GravityPrefab : MonoBehaviour
 {
  
     bool gravity = true;

@@ -2,10 +2,10 @@ using UnityEngine;
 using System.Collections;
 
 
-public class GestoTecla : ADetector_gesto
+public class GestoTecla : ADetectorGesto
 {
-    [SerializeField]
-    string tecla;
+	[SerializeField]
+	private KeyCode key;
 
     public override bool detect()
     {
@@ -14,13 +14,8 @@ public class GestoTecla : ADetector_gesto
 
     private bool detecto_tecla()
     {
-		bool toReturn = false;
-        if (Input.GetKeyDown(KeyCode.Z)) {
-            toReturn = true;
-        }
-		return toReturn;
-
-      }
+		return Input.GetKey(key);
+    }
 
 	private void Start()
 	{

@@ -27,7 +27,7 @@ public class ScriptAgua : MonoBehaviour
         {
             if (hit.transform.parent != null && hit.transform.parent.tag == "ARBOLES" && hit.transform.gameObject.tag == "FUEGO" && hit.transform.GetChild(0).gameObject.activeSelf == true)
             {
-                GameObject.Find("Fuego").GetComponent<apagar_fuego>().apagar(hit.transform.gameObject);
+                GameObject.Find("Fuego").GetComponent<ApagarFuego>().apagar(hit.transform.gameObject);
                 //Debug.Log("Entro al if");
             }
             //else Debug.Log("No entra al if");
