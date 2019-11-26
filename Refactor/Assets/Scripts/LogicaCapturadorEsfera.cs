@@ -34,7 +34,7 @@ public class LogicaCapturadorEsfera : MonoBehaviour
         }
         else {
             cont = 0;
-            if (other.tag != "UNDELETEABLE" || other.tag != "PLAYER")
+            if (other.tag != "UNDELETEABLE" && other.tag != "PLAYER")
             {
                 Destroy(other.gameObject);
             }
