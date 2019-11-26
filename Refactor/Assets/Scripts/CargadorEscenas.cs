@@ -6,10 +6,11 @@ public class CargadorEscenas : MonoBehaviour
 {
 	[SerializeField]
 	string sceneName, triggerTag;
+    bool cargue;
     // Start is called before the first frame update
     void Start()
     {
-        
+        cargue = false;
     }
 
     // Update is called once per frame
@@ -21,7 +22,12 @@ public class CargadorEscenas : MonoBehaviour
 	{
 		if(other.tag == triggerTag)
 		{
-			GameObject.Find("ManejadorEscenas").GetComponent<ManejadorEscenas>().CargarEscena(sceneName, this.gameObject);
+            if (!cargue) {
+                cargue = true;
+                GameObject.Find("ManejadorEscenas").GetComponent<ManejadorEscenas>().CargarEscena(sceneName, this.gameObject);
+                this.transform.Rotate(0, 180, 0);
+            }
+			
 		}
 	}
 }

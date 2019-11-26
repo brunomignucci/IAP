@@ -3551,12 +3551,12 @@ GameObject:
   - component: {fileID: 5586718955947265939}
   - component: {fileID: 7596180968863038581}
   - component: {fileID: 4001403396658248240}
-  - component: {fileID: 155357532757684308}
   - component: {fileID: 524442273717749798}
   - component: {fileID: -5239563725165867968}
   - component: {fileID: 1830558428696792600}
   - component: {fileID: 6049969675091014237}
-  - component: {fileID: 7968678075615473302}
+  - component: {fileID: 2191903234929910547}
+  - component: {fileID: 4871644521255370910}
   m_Layer: 0
   m_Name: Player
   m_TagString: PLAYER
@@ -3774,23 +3774,6 @@ MonoBehaviour:
   m_MovementThreshold: 0.001
   m_InterpolateRotation: 0.5
   m_InterpolateMovement: 0.5
---- !u!114 &155357532757684308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768440248311932564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f2f23de3c64df4eb81aa2e5c1340d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClientHandRight: {fileID: 8362194909993100510}
-  ClientHandLeft: {fileID: 3961694829937169294}
-  ClientCamera: {fileID: 7542236856677915805}
-  Head: {fileID: 4318810456759181966}
-  speed: 4
 --- !u!114 &524442273717749798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3849,7 +3832,24 @@ MonoBehaviour:
   sub_no_puente: {fileID: 8713825859879752100}
   tagueados_no_puente: []
   tagueados_flag_puente: []
---- !u!114 &7968678075615473302
+--- !u!114 &2191903234929910547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768440248311932564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f2f23de3c64df4eb81aa2e5c1340d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClientHandRight: {fileID: 8362194909993100510}
+  ClientHandLeft: {fileID: 3961694829937169294}
+  ClientCamera: {fileID: 7542236856677915805}
+  Head: {fileID: 4318810456759181966}
+  speed: 0
+--- !u!114 &4871644521255370910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9672,16 +9672,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7961362942615141652}
     m_Modifications:
-    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
-        type: 3}
-      propertyPath: m_Name
-      value: Water_P_S
-      objectReference: {fileID: 0}
-    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
-        type: 3}
-      propertyPath: m_TagString
-      value: UNDELETEABLE
-      objectReference: {fileID: 0}
     - target: {fileID: 982607821520384851, guid: 679a01fa69b7d294198923fe88143ba7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9736,6 +9726,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
+        type: 3}
+      propertyPath: m_Name
+      value: Water_P_S
+      objectReference: {fileID: 0}
+    - target: {fileID: 982607821520384862, guid: 679a01fa69b7d294198923fe88143ba7,
+        type: 3}
+      propertyPath: m_TagString
+      value: UNDELETEABLE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679a01fa69b7d294198923fe88143ba7, type: 3}
