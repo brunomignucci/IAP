@@ -3086,6 +3086,7 @@ GameObject:
   - component: {fileID: 673230806375969386}
   - component: {fileID: 2288129438081556822}
   - component: {fileID: 4456708911779168519}
+  - component: {fileID: 5945428211700325498}
   m_Layer: 0
   m_Name: levantarPiedras
   m_TagString: Untagged
@@ -3128,7 +3129,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3096434166029343293}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3796aba3f6d55f14faf5a711c971d300, type: 3}
   m_Name: 
@@ -3146,6 +3147,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172dc5427662ec74da13c64fbc882870, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5945428211700325498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3096434166029343293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226d6cf0386c8f44ab048bd6382ea4e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go1: {fileID: 6587957584339202664}
+  go2: {fileID: 3128872375682401990}
 --- !u!1 &3096542810345621364
 GameObject:
   m_ObjectHideFlags: 0
@@ -3555,8 +3570,9 @@ GameObject:
   - component: {fileID: -5239563725165867968}
   - component: {fileID: 1830558428696792600}
   - component: {fileID: 6049969675091014237}
-  - component: {fileID: 7968678075615473302}
   - component: {fileID: 4457043592948541804}
+  - component: {fileID: 2191903234929910547}
+  - component: {fileID: 4871644521255370910}
   m_Layer: 0
   m_Name: Player
   m_TagString: PLAYER
@@ -3832,6 +3848,23 @@ MonoBehaviour:
   sub_no_puente: {fileID: 8713825859879752100}
   tagueados_no_puente: []
   tagueados_flag_puente: []
+--- !u!114 &4457043592948541804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3768440248311932564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f2f23de3c64df4eb81aa2e5c1340d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClientHandRight: {fileID: 8362194909993100510}
+  ClientHandLeft: {fileID: 3961694829937169294}
+  ClientCamera: {fileID: 7542236856677915805}
+  Head: {fileID: 4318810456759181966}
+  speed: 5
 --- !u!114 &2191903234929910547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3863,23 +3896,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: FinalScene
   triggerTag: DETECTORFINAL
---- !u!114 &4457043592948541804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768440248311932564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f2f23de3c64df4eb81aa2e5c1340d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClientHandRight: {fileID: 8362194909993100510}
-  ClientHandLeft: {fileID: 3961694829937169294}
-  ClientCamera: {fileID: 7542236856677915805}
-  Head: {fileID: 4318810456759181966}
-  speed: 5
 --- !u!1 &3879490111288094830
 GameObject:
   m_ObjectHideFlags: 0
