@@ -5,8 +5,7 @@ using UnityEngine.Networking;
 
 /*
     Es la clase donde estan todos los RPC del cliente.
-     
-     
+      
      */
 
 public class MovementClient : NetworkBehaviour

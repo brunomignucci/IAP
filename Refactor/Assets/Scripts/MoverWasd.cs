@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoverWasd : MonoBehaviour
 {
     Rigidbody rb; float speed; Vector3 pos;
-    // Start is called before the first frame update
+    // Start is called before the first frame updateF
     void Start()
     {
        rb = GetComponent<Rigidbody>();
