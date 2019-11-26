@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class RotatePuzzle : MonoBehaviour
+public class RotatePuzzle : NetworkBehaviour
 {
     public GameObject pilar;
     private GameObject toRotate;
@@ -15,11 +16,16 @@ public class RotatePuzzle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!isServer)
+        {
+            return;
+        }
       velocidad = 5f;
       debounce = false;
       termineMov = false;
       toRotate = pilar.transform.GetChild(1).gameObject;
-      GetComponent<Renderer>().material.SetColor("_Color", Color.white);
+      //GetComponent<Renderer>().material.SetColor("_Color", Color.white);
+      GetComponent<SpawnableObject>().ChangeColor(Color.white);
       target = Quaternion.Euler(0,toRotate.transform.localRotation.eulerAngles.y,0);
       lastRotation = 0;
     }
@@ -27,7 +33,10 @@ public class RotatePuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (!isServer)
+        {
+            return;
+        }
       Debug.DrawRay (transform.position, Vector3.up , Color.yellow);
       //Debug.DrawRay (transform.position, Vector3.down, Color.yellow);
       if(termineMov){
@@ -36,7 +45,8 @@ public class RotatePuzzle : MonoBehaviour
           //Debug.Log("Entro");
           debounce = true;
           target = Quaternion.Euler(0,toRotate.transform.localRotation.eulerAngles.y + 90f, 0);
-          GetComponent<Renderer>().material.SetColor("_Color", Color.green);
+          //GetComponent<Renderer>().material.SetColor("_Color", Color.green);
+          GetComponent<SpawnableObject>().ChangeColor(Color.green);
           termineMov = false;
         }
         else{
@@ -52,26 +62,8 @@ public class RotatePuzzle : MonoBehaviour
       else{ //Si ya llego a destino..... o esta muy cerca como para detectar una diferencia (Problema de precision)
         toRotate.transform.localRotation = Quaternion.Euler(0,Mathf.Ceil(toRotate.transform.localRotation.eulerAngles.y),0);//Lo llevo al numero entero mas cercano
         termineMov = true; //Termino el movimiento
-        GetComponent<Renderer>().material.SetColor("_Color", Color.white);//Cambio color para indicar que ya se puede activar
-        //Debug.Log("Termine de mover");
-      }
+        //GetComponent<Renderer>().material.SetColor("_Color", Color.white);//Cambio color para indicar que ya se puede activar
+        GetComponent<SpawnableObject>().ChangeColor(Color.white);
+        }
     }
-
-    // void OnTriggerEnter(Collider other){
-    //
-    //   if(!debounce && termineMov){
-    //     Debug.Log("Entre a la esfera");
-    //     target = Quaternion.Euler(0,toRotate.transform.rotation.eulerAngles.y + 90f, 0);
-    //     debounce = true;
-    //     GetComponent<Renderer>().material.SetColor("_Color", Color.green);
-    //     termineMov = false;
-    //   }
-    // }
-    //
-    // void OnTriggerExit(Collider other){
-    //   if(debounce){
-    //     Debug.Log("Sali de la esfera");
-    //     debounce = false;
-    //   }
-    // }
 }
