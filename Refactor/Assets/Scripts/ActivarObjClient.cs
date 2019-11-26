@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ActivarObjCliente : MonoBehaviour
+public class ActivarObjClient : MonoBehaviour
 {
     // Start is called before the first frame update
     private bool activado;
