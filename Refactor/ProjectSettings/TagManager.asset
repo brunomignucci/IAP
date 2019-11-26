@@ -37,6 +37,9 @@ TagManager:
   - PORTAL3
   - DETECTOR
   - DETECTORFINAL
+  - FUEGO
+  - DETECTORFINALISIMO
+  - CREDITOS
   layers:
   - Default
   - TransparentFX
