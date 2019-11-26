@@ -18,19 +18,19 @@ public class SetSong : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if(!personajeEncontrado){
-        manager = GameObject.Find("Audio").GetComponent<AudioManager>();
-        if(manager != null){
-          personajeEncontrado = true;
-        }
-      }
+      //if(!personajeEncontrado){
+      //  manager = GameObject.Find("Audio").GetComponent<AudioManager>();
+      //  if(manager != null){
+      //    personajeEncontrado = true;
+      //  }
+      //}
     }
 
     void OnTriggerEnter(Collider other){
-      if(!activado){
-        activado = true;
-        manager.setNewSong(cancion);
-        Debug.Log("Cambio cancion");
-      }
+      //if(!activado){
+      //  activado = true;
+      //  manager.setNewSong(cancion);
+      //  Debug.Log("Cambio cancion");
+      //}
     }
 }
