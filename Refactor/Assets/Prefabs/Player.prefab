@@ -2385,6 +2385,7 @@ MonoBehaviour:
   - {fileID: 5603345204491924326}
   - {fileID: 23471823124598759}
   - {fileID: 8160191096501374881}
+  handedness: 0
 --- !u!114 &828880471583505503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3579,7 +3580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TransformSyncMode: 1
-  m_SendInterval: 0.11111111
+  m_SendInterval: 0.1
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
   m_SyncSpin: 0
@@ -3622,7 +3623,7 @@ MonoBehaviour:
   LeapHandRight: {fileID: 2709222353926372960}
   LeapHandLeft: {fileID: 7276272611254868782}
   LeapRig: {fileID: 7665765494854671150}
-  HandUpdateRate: 100
+  HandUpdateRate: 64
 --- !u!114 &5586718955947265939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7045,6 +7046,7 @@ MonoBehaviour:
   - {fileID: 1382525543200193861}
   - {fileID: 2490216908674666328}
   - {fileID: 6309836465699147205}
+  handedness: 0
 --- !u!1 &7311508055182072485
 GameObject:
   m_ObjectHideFlags: 0

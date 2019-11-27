@@ -26,6 +26,12 @@ public class Server : NetworkBehaviour
 	{
 		GetComponent<Client>().RpcMoverPlayer(-1 * Time.deltaTime);
 	}
+
+	public void DisableHand(int handedness)
+	{
+		GetComponent<Client>().RpcDisableHand(handedness);
+	}
+
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -55,10 +61,6 @@ public class Server : NetworkBehaviour
 				1
 			);
 		}
-		else
-		{
-			GetComponent<Client>().RpcDisableHand(1);
-		}
 		if (LeapHandLeft.activeInHierarchy)
 		{
 			GetComponent<Client>().RpcUpdateHand(
@@ -66,10 +68,6 @@ public class Server : NetworkBehaviour
 				LeapHandLeft.GetComponent<LeapHandScript>().getHandRotationsLocal(),
 				2
 			);
-		}
-		else
-		{
-			GetComponent<Client>().RpcDisableHand(2);
 		}
 	}
 

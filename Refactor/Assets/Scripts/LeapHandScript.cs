@@ -9,6 +9,8 @@ public class LeapHandScript : MonoBehaviour
 	private GameObject wrist, palm;
 	[SerializeField]
 	private GameObject[] fingers;
+	[SerializeField]
+	private int handedness; //1 es right, 2 es left
 	private int fingerSegments = 4;
 	// Start is called before the first frame update
 	void Start()
@@ -21,8 +23,12 @@ public class LeapHandScript : MonoBehaviour
     {
         
     }
+	private void OnDisable()
+	{
+		transform.root.GetComponent<Server>().DisableHand(handedness);
+	}
 
-    /*
+	/*
     devuevlve un arreglo de posiciones de cada gameobject que compone la mano 
          
     */
