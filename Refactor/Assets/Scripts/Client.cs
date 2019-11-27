@@ -31,7 +31,7 @@ public class Client : NetworkBehaviour
 			return;
 		}
 
-		Head.transform.rotation = ClientCamera.transform.rotation;
+		//Head.transform.rotation = ClientCamera.transform.rotation;
 		GetComponent<Server>().CmdUpdateServerCamera(ClientCamera.transform.rotation);
 		
     }
