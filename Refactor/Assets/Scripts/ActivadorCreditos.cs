@@ -7,6 +7,8 @@ public class ActivadorCreditos : MonoBehaviour
     
     GameObject credits;
     bool encontre;
+    [SerializeField]
+    GameObject text;
     // Start is called before the first frame update
     void Start()
     {
