@@ -57,7 +57,9 @@ public class ScaleState : State
     Debug.Log("Escalando");
     escalando = false;
     objeto.GetComponent<Rigidbody>().isKinematic = false;
-    //objeto.GetComponent<gravityPrefab>().enabled = true;
-    ctx.setState(next);
+        objeto.GetComponent<Collider>().enabled = true;
+        objeto.GetComponent<Rigidbody>().detectCollisions = true;
+        //objeto.GetComponent<gravityPrefab>().enabled = true;
+        ctx.setState(next);
   }
 }
