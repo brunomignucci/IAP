@@ -53,7 +53,7 @@ public class PuzzleManager : NetworkBehaviour
 			completo = true;
 			puerta.abrirPuerta();
 		}
-		if (rotationPanel1.transform.localRotation.eulerAngles.y == 180f)
+		if (Mathf.Abs(rotationPanel1.transform.localRotation.eulerAngles.y - 180f) < 0.01f)
 		{
 			completoPilar1 = true;
 			//Debug.Log("Completado Pilar 1");
@@ -65,7 +65,7 @@ public class PuzzleManager : NetworkBehaviour
 			pilar1.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
 		}
 
-		if (rotationPanel2.transform.localRotation.eulerAngles.y == 270f)
+		if (Mathf.Abs(rotationPanel2.transform.localRotation.eulerAngles.y - 270f) < 0.01f)
 		{
 			completoPilar2 = true;
 			// Debug.Log("Completado Pilar 2");
@@ -77,7 +77,7 @@ public class PuzzleManager : NetworkBehaviour
 			pilar2.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
 		}
 
-		if (rotationPanel3.transform.localRotation.eulerAngles.y == 90f)
+		if (Mathf.Abs(rotationPanel3.transform.localRotation.eulerAngles.y - 90f) < 0.01f)
 		{
 			completoPilar3 = true;
 			// Debug.Log("Completado Pilar 3");
@@ -89,7 +89,7 @@ public class PuzzleManager : NetworkBehaviour
 			pilar3.transform.GetChild(2).gameObject.GetComponent<Renderer>().material.SetColor("_Color", Color.white);
 		}
 
-		if (rotationPanel4.transform.localRotation.eulerAngles.y >= 0 && rotationPanel4.transform.localRotation.eulerAngles.y < 0.1)
+		if (Mathf.Abs(rotationPanel4.transform.localRotation.eulerAngles.y) < 0.01f)
 		{
 			completoPilar4 = true;
 			//Debug.Log("Completado Pilar 4");

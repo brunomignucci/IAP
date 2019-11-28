@@ -59,19 +59,20 @@ public class RotatePuzzle : NetworkBehaviour
 		}
 		else
 		{
-		if (toRotate.transform.localRotation != target)
+		if (Mathf.Abs(toRotate.transform.localRotation.eulerAngles.y- target.eulerAngles.y) > 0.01f)
 		{ //Si todavia no llego a destino
 			toRotate.transform.localRotation = Quaternion.Slerp(toRotate.transform.localRotation, target, velocidad * Time.deltaTime);
 			//Debug.Log("Sigo Moviendo");
 		}
 		else
 		{ //Si ya llego a destino..... o esta muy cerca como para detectar una diferencia (Problema de precision)
-			toRotate.transform.localRotation = Quaternion.Euler(0, Mathf.Ceil(toRotate.transform.localRotation.eulerAngles.y), 0);//Lo llevo al numero entero mas cercano
+			toRotate.transform.localRotation = Quaternion.Euler(0, Mathf.Round(toRotate.transform.localRotation.eulerAngles.y), 0);//Lo llevo al numero entero mas cercano
 			termineMov = true; //Termino el movimiento
 							   //GetComponent<Renderer>().material.SetColor("_Color", Color.white);//Cambio color para indicar que ya se puede activar
 			GetComponent<SpawnableObject>().ChangeColor(Color.white);
 		}
 		}
+		
 	}
 
 }
