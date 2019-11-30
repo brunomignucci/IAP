@@ -79,6 +79,11 @@ public class Server : NetworkBehaviour
 		LeapRig.transform.rotation = newRot;
 	}
 
+    public void toggleWater() 
+    {
+        //si esta activada, desactivo
+    }
+
 	public void SetHandMenuActive(bool active)
 	{
 		GetComponent<Client>().RpcSetHandMenuActive(active);

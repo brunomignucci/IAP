@@ -11,7 +11,7 @@ using UnityEngine.Networking;
 public class MovementClient : NetworkBehaviour
 {
 	[SerializeField]
-	private GameObject ClientHandRight, ClientHandLeft, ClientCamera, Head;
+	private GameObject ClientHandRight, ClientHandLeft, ClientCamera;
     [SerializeField]
     float speed;
     Vector3 proj;

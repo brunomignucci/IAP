@@ -5,9 +5,39 @@ using UnityEngine;
 public class ScriptAgua : MonoBehaviour
 {
     [SerializeField]
-    private GameObject indice_izq, indice_der, pulgar,particulas;
+    private GameObject indice_izq, indice_der, pulgar, particulas;
+    [SerializeField]
+    private GameObject flag; // network transform que si esta en y menor a 0 desactivar el agua
 
     private Plane plano_forward;
+
+    private GameObject[] flags;
+
+    bool encontre_flag;
+
+    void start() 
+    {
+        encontre_flag=false;
+    }
+
+    void update()
+    {
+        if (!encontre_flag) //tengo que encontrar el flag
+        {
+            flags = GameObject.FindGameObjectsWithTag("FLAGWATER");
+
+            if (flags.Length > 0)
+            {
+                encontre_flag = true;
+                flag = flags[0];
+                Debug.Log("Encontre el falg water");
+            }
+            else 
+            {
+                Debug.Log("No puedo encontrar el flag :(");
+            }
+        }
+    }
 
     public void ActivarAgua()
     {
@@ -16,6 +46,7 @@ public class ScriptAgua : MonoBehaviour
         {
             //si las particulas estan desactivadas las activo
             particulas.SetActive(true);
+            //flag.transform.position= new Vector3(0, -5, 0);
         }
         plano_forward.Set3Points(indice_izq.transform.position, pulgar.transform.position, indice_der.transform.position);
         particulas.gameObject.transform.GetChild(0).position = pulgar.transform.position;
@@ -44,6 +75,8 @@ public class ScriptAgua : MonoBehaviour
         {
             //si las particulas estan activas las desactivo
             particulas.SetActive(false);
+            //flag.transform.position = new Vector3(0, 5, 0);
+
         }
 
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -804,7 +804,7 @@ MonoBehaviour:
     Manuel Puhl\nNicolas Landau\nMatias Rios\nBruno Mignucci\n\n-ART DIRECTOR-\nJuan
     Manuel Puhl\n\n-LEVELS DESIGNER-\nRios Matias\n\n-MECHANICS DESIGNER-\nBruno Mignucci\n\n-LIGHTING
     DIRECTOR-\nNicolas Landau\n\n-TECHNICAL DIRECTOR-\nJuan Manuel Puhl\n\n-SPECIAL
-    THANKS-\nMatias Selzer\nLujan Granuza"
+    THANKS-\nMatias Selzer\nLujan Ganuza"
 --- !u!222 &863966978
 CanvasRenderer:
   m_ObjectHideFlags: 0
