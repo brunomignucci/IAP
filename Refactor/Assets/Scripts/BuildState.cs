@@ -34,7 +34,7 @@ public class BuildState : State
 			//newObject.GetComponent<Renderer>().material.SetColor("_Color", colorRandom);
 			NetworkServer.Spawn(newObject);
 			newObject.GetComponent<SpawnableObject>().ChangeColor(colorRandom);
-			newObject.transform.position = referencia_posicion.transform.position;
+			newObject.transform.position = referencia_posicion.transform.position + transform.forward * 3f;
 			newObject.transform.SetParent(parent.transform);
 			ctx.setState(next);
 		}
