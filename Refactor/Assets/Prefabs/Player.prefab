@@ -3464,7 +3464,6 @@ GameObject:
   - component: {fileID: 1830558428696792600}
   - component: {fileID: 4871644521255370910}
   - component: {fileID: 7683017299286373927}
-  - component: {fileID: 4505145875470523291}
   m_Layer: 0
   m_Name: Player
   m_TagString: PLAYER
@@ -3601,7 +3600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d323583c2229d694bb88fb7e843bd423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 4
+  MovementSpeed: 6
   ClientCamera: {fileID: 7542236856677915805}
   ServerCamera: {fileID: 9008390857180211512}
   Gestos: {fileID: 8627229536463912425}
@@ -3730,22 +3729,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
---- !u!114 &4505145875470523291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3768440248311932564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50f2f23de3c64df4eb81aa2e5c1340d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ClientHandRight: {fileID: 8362194909993100510}
-  ClientHandLeft: {fileID: 3961694829937169294}
-  ClientCamera: {fileID: 7542236856677915805}
-  speed: 4
 --- !u!1 &3893409239275673212
 GameObject:
   m_ObjectHideFlags: 0
@@ -9444,6 +9427,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7168067869415826694}
     m_Modifications:
+    - target: {fileID: 5509841636200574283, guid: 8d69f3398e167d340a7eb1d25ba9df92,
+        type: 3}
+      propertyPath: m_Name
+      value: Agua
+      objectReference: {fileID: 0}
     - target: {fileID: 1719289974770851889, guid: 8d69f3398e167d340a7eb1d25ba9df92,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9498,11 +9486,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5509841636200574283, guid: 8d69f3398e167d340a7eb1d25ba9df92,
-        type: 3}
-      propertyPath: m_Name
-      value: Agua
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d69f3398e167d340a7eb1d25ba9df92, type: 3}
