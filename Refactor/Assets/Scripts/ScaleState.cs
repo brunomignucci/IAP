@@ -21,14 +21,14 @@ public class ScaleState : State
 
   private void Update(){
     if(escalando){
-      objeto.transform.position = referencia_posicion.transform.position
-       + new Vector3(0, 0.5f, 0.3f);
+      objeto.transform.position = referencia_posicion.transform.position + transform.forward * 3f
+       + new Vector3(0, 0.5f, 0);
 			objeto.transform.localScale = new Vector3(escala,escala,escala) ;
       objeto.GetComponent<SpawnableObject>().ScaleObject(escala);
-      Debug.Log(escala);
+    //  Debug.Log(escala);
       if(!tipoEscalado){
 		//escala += 0.01f;
-		escala += Time.deltaTime;
+		escala +=Time.deltaTime;
         if(escala >= 2f){
 
           tipoEscalado = true;
