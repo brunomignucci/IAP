@@ -16,8 +16,8 @@ public class Client : NetworkBehaviour
 	private GameObject ClientHandRight, ClientHandLeft, ClientCamera, Head, HandMenu;
 	// Start is called before the first frame update
 	void Start()
-    {
-        if(!isLocalPlayer)
+	{
+		if (!isLocalPlayer)
 		{
 			return;
 		}
@@ -25,16 +25,16 @@ public class Client : NetworkBehaviour
 
 	// Update is called once per frame
 	void Update()
-    {
-		if(!isLocalPlayer)
+	{
+		if (!isLocalPlayer)
 		{
 			return;
 		}
 
 		//Head.transform.rotation = ClientCamera.transform.rotation;
 		GetComponent<Server>().CmdUpdateServerCamera(ClientCamera.transform.rotation);
-		
-    }
+
+	}
 
 	public override void OnStartLocalPlayer()
 	{
@@ -44,7 +44,7 @@ public class Client : NetworkBehaviour
 	[ClientRpc]
 	public void RpcMoverPlayer(float delta)
 	{
-        GetComponent<MovementClient>().moverPlayer(delta);
+		GetComponent<MovementClient>().moverPlayer(delta);
 	}
 
 	[ClientRpc]
@@ -87,14 +87,14 @@ public class Client : NetworkBehaviour
 	{
 		HandMenu.GetComponent<HandMenu>().SelectEntry(i);
 	}
-    [ClientRpc]
-    public void RpcEnableWater()
-    {
-        ClientCamera.GetComponent<ScriptAgua>().ActivarAgua();
-    }
-    [ClientRpc]
-    public void RpcDisableWater()
-    {
-        ClientCamera.GetComponent<ScriptAgua>().DesactivarAgua();
-    }
+	[ClientRpc]
+	public void RpcEnableWater()
+	{
+		ClientCamera.GetComponent<ScriptAgua>().ActivarAgua();
+	}
+	[ClientRpc]
+	public void RpcDisableWater()
+	{
+		ClientCamera.GetComponent<ScriptAgua>().DesactivarAgua();
+	}
 }

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class AccionadorAguaApagar : AAccionador
 {
-    [SerializeField]
-    //GameObject particulas;
+	//[SerializeField]
+	//GameObject particulas;
+	[SerializeField]
+	private GameObject serverCamera;
 
     //private bool activo = false;
     public override void accionar()
@@ -18,6 +20,7 @@ public class AccionadorAguaApagar : AAccionador
         /*
          * */
         transform.root.GetComponent<Server>().SetWaterEnable(false);
+		serverCamera.GetComponent<ScriptAgua>().DesactivarAgua();
         //Debug.Log("desactive");
         /*
         if (particulas.activeSelf == true)

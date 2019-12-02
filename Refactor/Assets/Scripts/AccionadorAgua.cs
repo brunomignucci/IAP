@@ -7,6 +7,8 @@ public class AccionadorAgua : AAccionador
     //[SerializeField]
     //GameObject particulas, a, b, c;
     private GameObject fuego;
+	[SerializeField]
+	private GameObject serverCamera;
 
     private Plane plano_forward;
     private int contador = 0;
@@ -27,8 +29,11 @@ public class AccionadorAgua : AAccionador
     {
 
         transform.root.GetComponent<Server>().SetWaterEnable(true);
-        
-        /*
+		serverCamera.GetComponent<ScriptAgua>().ActivarAgua();
+
+
+
+		/*
         if (particulas.activeSelf == false)
         {
             Debug.Log("active");
@@ -40,6 +45,6 @@ public class AccionadorAgua : AAccionador
         particulas.gameObject.transform.GetChild(0).position = a.transform.position;
         particulas.gameObject.transform.GetChild(0).forward = plano_forward.normal;
         */
-    }
+	}
   
 }
