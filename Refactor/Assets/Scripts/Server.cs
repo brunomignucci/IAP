@@ -10,6 +10,7 @@ public class Server : NetworkBehaviour
 	private GameObject LeapHandRight, LeapHandLeft, LeapRig;
 	[SerializeField]
 	private int HandUpdateRate;
+	private bool aguaActivada = false;
 
 	public void mover_adelante_leap()
 	{
@@ -79,21 +80,31 @@ public class Server : NetworkBehaviour
 		LeapRig.transform.rotation = newRot;
 	}
 
-    public void toggleWater() 
-    {
-        //si esta activada, desactivo
-    }
+	public void toggleWater()
+	{
+		//si esta activada, desactivo
+	}
 
 	public void SetHandMenuActive(bool active)
 	{
 		GetComponent<Client>().RpcSetHandMenuActive(active);
 	}
-    public void SetWaterEnable(bool active)
-    {
-        if (active) GetComponent<Client>().RpcEnableWater();
-        else GetComponent<Client>().RpcDisableWater();
+	public void SetWaterEnable(bool active)
+	{
+		if (active && !aguaActivada)
+		{
+			GetComponent<Client>().RpcEnableWater();
+			aguaActivada = true;
+		}
+		else
+		{
+			if (!active && aguaActivada)
+			{
+				GetComponent<Client>().RpcDisableWater();
+				aguaActivada = false;
+			}
+		}
+	}
 
-    }
-	
 
 }
