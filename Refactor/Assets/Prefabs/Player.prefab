@@ -13210,6 +13210,7 @@ MonoBehaviour:
   cubo: {fileID: 7296916353850570118, guid: 04e7a03e60d5e8a41befcdd759f76971, type: 3}
   esfera: {fileID: 1105066688224035044, guid: 9b951a93e368d9b4c8b2e15caa56d8c7, type: 3}
   toCreate: {fileID: 323169892253858859}
+  camera: {fileID: 7542236856677915805}
 --- !u!114 &4963939107072299860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13224,6 +13225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   next: {fileID: 1034074696189992411}
   referencia_posicion: {fileID: 5978441781680845870}
+  camera: {fileID: 7542236856677915805}
 --- !u!1 &8705925871897427841
 GameObject:
   m_ObjectHideFlags: 0

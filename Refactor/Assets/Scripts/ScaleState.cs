@@ -14,6 +14,7 @@ public class ScaleState : State
   private GameObject objeto;
   private NetworkInstanceId id;
   private GameObject lista;
+  public GameObject camera;
 
   public void Start(){
     lista = GameObject.Find("/ListaObjetosCreados");
@@ -21,7 +22,7 @@ public class ScaleState : State
 
   private void Update(){
     if(escalando){
-      objeto.transform.position = referencia_posicion.transform.position + transform.forward * 3f
+      objeto.transform.position = referencia_posicion.transform.position + camera.transform.forward * 1.5f
        + new Vector3(0, 0.5f, 0);
 			objeto.transform.localScale = new Vector3(escala,escala,escala) ;
       objeto.GetComponent<SpawnableObject>().ScaleObject(escala);

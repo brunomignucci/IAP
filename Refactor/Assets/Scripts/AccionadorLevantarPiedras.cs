@@ -12,6 +12,8 @@ public class AccionadorLevantarPiedras : AAccionador
     private TriggerPiedras scriptPiedras;
     private bool activadoLocal;
     private GameObject bloqueo;
+    private static float ALTURA_MAXIMA = 50f;
+    private bool piedrasActivadas;
 
     public override void accionar()
     {
@@ -27,13 +29,17 @@ public class AccionadorLevantarPiedras : AAccionador
             float fuerzaAleatoria = UnityEngine.Random.Range(5f, 10f) * 2000.0f;
             rb.AddForce(transform.up * fuerzaAleatoria);
           }
+          piedrasActivadas = true;
         }
       }
     }
 
+
+
     // Start is called before the first frame update
     void Start()
     {
+        piedrasActivadas = false;
         listaPiedras =  GameObject.Find("piedras");
         triggerPiedras = GameObject.Find("TriggerEntradaPiedras");
         size = listaPiedras.transform.childCount;
@@ -45,7 +51,13 @@ public class AccionadorLevantarPiedras : AAccionador
     // Update is called once per frame
     void Update()
     {
-
+      if(piedrasActivadas){
+        for(int i=0; i<size; i++){
+          if(listaPiedras.transform.GetChild(i).transform.position.y >= ALTURA_MAXIMA){
+            Destroy(listaPiedras.transform.GetChild(i).gameObject);
+          }
+        }
+      }
 
     }
 }
