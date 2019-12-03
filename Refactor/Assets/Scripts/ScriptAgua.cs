@@ -26,8 +26,27 @@ public class ScriptAgua : MonoBehaviour
 
 	}
 
+    public void actualizarRotacionAguaYApagarFuego() 
+    {
+        plano_forward.Set3Points(indice_izq.transform.position, pulgar.transform.position, indice_der.transform.position);
+        particulas.gameObject.transform.GetChild(0).position = posicionOrigen.transform.position;
+        particulas.gameObject.transform.GetChild(0).forward = plano_forward.normal;
+        Ray rayo = new Ray(pulgar.transform.position, plano_forward.normal);
+        RaycastHit hit;
+        if (Physics.Raycast(rayo, out hit, 10.0f))
+        {
+            if (hit.transform.parent != null && hit.transform.parent.tag == "ARBOLES" && hit.transform.gameObject.tag == "FUEGO" && hit.transform.GetChild(0).gameObject.activeSelf == true)
+            {
+                GameObject.Find("Fuego").GetComponent<ApagarFuego>().apagar(hit.transform.gameObject);
+                //Debug.Log("Entro al if");
+            }
+            //else Debug.Log("No entra al if");
+        }
+    }
+    
 	public void ActivarAgua()
 	{
+                
 
 		if (particulas.activeSelf == false)
 		{

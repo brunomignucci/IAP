@@ -92,6 +92,13 @@ public class Client : NetworkBehaviour
 	{
 		ClientCamera.GetComponent<ScriptAgua>().ActivarAgua();
 	}
+
+    [ClientRpc]
+    public void RpcRotYFire() 
+    {
+        ClientCamera.GetComponent<ScriptAgua>().actualizarRotacionAguaYApagarFuego();
+    }
+
 	[ClientRpc]
 	public void RpcDisableWater()
 	{

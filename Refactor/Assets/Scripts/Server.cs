@@ -91,13 +91,17 @@ public class Server : NetworkBehaviour
 	}
 	public void SetWaterEnable(bool active)
 	{
+        if (aguaActivada)
+        {
+            GetComponent<Client>().RpcRotYFire();
+        }
 		if (active && !aguaActivada)
 		{
 			GetComponent<Client>().RpcEnableWater();
 			aguaActivada = true;
 		}
 		else
-		{
+		{            
 			if (!active && aguaActivada)
 			{
 				GetComponent<Client>().RpcDisableWater();

@@ -8475,7 +8475,7 @@ MonoBehaviour:
   LeapHandRight: {fileID: 2709222353926372960}
   LeapHandLeft: {fileID: 7276272611254868782}
   LeapRig: {fileID: 7665765494854671150}
-  HandUpdateRate: 100
+  HandUpdateRate: 64
 --- !u!114 &5586718955947265939
 MonoBehaviour:
   m_ObjectHideFlags: 0

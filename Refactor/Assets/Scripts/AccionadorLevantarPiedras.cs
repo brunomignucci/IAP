@@ -49,6 +49,7 @@ public class AccionadorLevantarPiedras : AAccionador
     }
 
     // Update is called once per frame
+    /*
     void Update()
     {
       if(piedrasActivadas){
@@ -60,4 +61,5 @@ public class AccionadorLevantarPiedras : AAccionador
       }
 
     }
+    */
 }
